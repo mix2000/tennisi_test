@@ -1,0 +1,42 @@
+.ts--radio-box {
+  input[type='radio'] {
+    display: none;
+
+    &+label {
+      max-width: 96px;
+      display: flex;
+      width: fit-content;
+      flex-wrap: wrap;
+      padding: 16px 20px;
+      border: 2px solid var(--clr-border);
+      border-radius: 8px;
+      cursor: pointer;
+
+      >span {
+        flex-basis: 100%;
+        &:first-of-type {
+          @include ty-paragraph-large;
+          color: var(--clr-general-black-100);
+        }
+
+        &:last-of-type {
+          @include ty-paragraph-small;
+          color: var(--clr-gray);
+          margin-top: -2px;
+        }
+      }
+    }
+
+    &:checked {
+      &+label {
+        border-color: var(--clr-accent);
+        //border-width: 2px;
+        //padding: 15px 19px;
+      }
+    }
+  }
+
+  &.disabled {
+    opacity: .5;
+  }
+}

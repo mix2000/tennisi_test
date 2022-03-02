@@ -1,0 +1,22 @@
+.ts--tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 11px;
+  border-radius: 4px;
+  border: 1px solid var(--clr-border);
+  background: var(--clr-general-white-100);
+  cursor: pointer;
+
+  span {
+    @include ty-paragraph-small;
+    color: var(--clr-general-black-100);
+  }
+
+  &:hover {
+    background: var(--clr-hover);
+  }
+
+  &.disabled {
+    opacity: .4;
+  }
+}

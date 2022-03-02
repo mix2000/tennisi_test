@@ -1,0 +1,276 @@
+// typography
+//$typography: (
+//        accent: (
+//                large: (
+//                        font-weight: (
+//                                regular: normal,
+//                                medium: 500,
+//                                bold: bold
+//                        ),
+//                        font-size: 40px,
+//                        line-height: 40px,
+//                        padding-top: 13px,
+//                        padding-bottom: 6px,
+//                ),
+//        ),
+//        headline: (
+//                large: (
+//                        font-weight: (
+//                                regular: normal,
+//                                medium: 500,
+//                                bold: bold
+//                        ),
+//                        font-size: 24px,
+//                        line-height: 32px,
+//                        padding-top: 13px,
+//                        padding-bottom: 6px,
+//                ),
+//                medium: (
+//                        font-weight: (
+//                                regular: normal,
+//                                medium: 500,
+//                                bold: bold
+//                        ),
+//                        font-size: 20px,
+//                        line-height: 28px,
+//                        padding-top: 7px,
+//                        padding-bottom: 3px,
+//                ),
+//                small: (
+//                        font-weight: (
+//                                regular: normal,
+//                                medium: 500,
+//                                bold: bold
+//                        ),
+//                        font-size: 14px,
+//                        line-height: 20px,
+//                        padding-top: 8px,
+//                        padding-bottom: 6px,
+//                ),
+//        ),
+//        paragraph: (
+//                large: (
+//                        font-weight: (
+//                                regular: normal,
+//                                medium: 500,
+//                                bold: bold
+//                        ),
+//                        font-size: 16px,
+//                        line-height: 29px,
+//                        padding-top: 4px,
+//                        padding-bottom: 2px,
+//                ),
+//                medium: (
+//                        font-weight: (
+//                                regular: normal,
+//                                medium: 500,
+//                                bold: bold
+//                        ),
+//                        font-size: 14px,
+//                        line-height: 20px,
+//                        padding-top: 4px,
+//                        padding-bottom: 2px,
+//                ),
+//                small: (
+//                        font-weight: (
+//                                regular: normal,
+//                                medium: 500,
+//                                bold: bold
+//                        ),
+//                        font-size: 12px,
+//                        line-height: 20px,
+//                        padding-top: 3px,
+//                        padding-bottom: 1px,
+//                ),
+//                tiny: (
+//                        font-weight: (
+//                                regular: normal,
+//                                medium: 500,
+//                                bold: bold
+//                        ),
+//                        font-size: 10px,
+//                        line-height: 10px,
+//                        padding-top: 7px,
+//                        padding-bottom: 6px,
+//                ),
+//        ),
+//);
+
+// colors
+//$colors: (
+//        dark: (
+//                general: (
+//                        white: (
+//                                100: rgba(255, 255, 255, 1),
+//                                80: rgba(255, 255, 255, 0.8),
+//                                60: rgba(255, 255, 255, 0.6),
+//                                40: rgba(255, 255, 255, 0.4),
+//                                20: rgba(255, 255, 255, 0.2),
+//                                10: rgba(255, 255, 255, 0.1),
+//                                5: rgba(255, 255, 255, 0.05),
+//                                025: rgba(255, 255, 255, 0.025),
+//                        ),
+//                        black: (
+//                                100: rgba(45, 45, 53, 1),
+//                                80: rgba(45, 45, 53, 0.8),
+//                                60: rgba(45, 45, 53, 0.6),
+//                                40: rgba(45, 45, 53, 0.4),
+//                                20: rgba(45, 45, 53, 0.2),
+//                                10: rgba(45, 45, 53, 0.1),
+//                                5: rgba(45, 45, 53, 0.05),
+//                                025: rgba(45, 45, 53, 0.025),
+//                        ),
+//                ),
+//                background: (
+//                        primary: (
+//                                100: rgba(255, 255, 255, 1),
+//                        ),
+//                        secondary: (
+//                                100: rgba(243, 243, 243, 1),
+//                        ),
+//                        accent: (
+//                                linear-gradient(90deg, #3C3C51 0%, #7B363A 99.9%),
+//                        ),
+//                ),
+//                interface: (
+//                        general-light-theme: (
+//                                100: rgba(28, 28, 28, 1),
+//                                80: rgba(28, 28, 28, 0.8),
+//                                60: rgba(28, 28, 28, 0.6),
+//                                40: rgba(28, 28, 28, 0.4),
+//                                20: rgba(28, 28, 28, 0.2),
+//                                10: rgba(28, 28, 28, 0.1),
+//                                5: rgba(28, 28, 28, 0.05),
+//                                025: rgba(28, 28, 28, 0.025),
+//                        ),
+//                        general-dark-theme: (
+//                                100: rgba(255, 255, 255, 1),
+//                                80: rgba(255, 255, 255, 0.8),
+//                                60: rgba(255, 255, 255, 0.6),
+//                                40: rgba(255, 255, 255, 0.4),
+//                                20: rgba(255, 255, 255, 0.2),
+//                                10: rgba(255, 255, 255, 0.1),
+//                                5: rgba(255, 255, 255, 0.05),
+//                        ),
+//                        accent: (
+//                                linear-gradient(121.33deg, #323232 31.08%, #FF4E05 100%),
+//                        ),
+//                ),
+//                brand: (
+//                        primary: (
+//                                100: rgba(242, 97, 38, 1),
+//                                80: rgba(242, 97, 38, 0.8),
+//                                60: rgba(242, 97, 38, 0.6),
+//                                40: rgba(242, 97, 38, 0.4),
+//                                20: rgba(242, 97, 38, 0.2),
+//                                10: rgba(242, 97, 38, 0.1),
+//                        ),
+//                        secondary: (
+//                                100: rgba(68, 73, 219, 1),
+//                                80: rgba(68, 73, 219, 0.8),
+//                                60: rgba(68, 73, 219, 0.6),
+//                                40: rgba(68, 73, 219, 0.4),
+//                                20: rgba(68, 73, 219, 0.2),
+//                                10: rgba(68, 73, 219, 0.1),
+//                        ),
+//                ),
+//        ),
+//        light: (
+//                general: (
+//                        white: (
+//                                100: rgba(255, 255, 255, 1),
+//                                80: rgba(255, 255, 255, 0.8),
+//                                60: rgba(255, 255, 255, 0.6),
+//                                40: rgba(255, 255, 255, 0.4),
+//                                20: rgba(255, 255, 255, 0.2),
+//                                10: rgba(255, 255, 255, 0.1),
+//                                5: rgba(255, 255, 255, 0.05),
+//                                025: rgba(255, 255, 255, 0.025),
+//                        ),
+//                        black: (
+//                                100: rgba(45, 45, 53, 1),
+//                                80: rgba(45, 45, 53, 0.8),
+//                                60: rgba(45, 45, 53, 0.6),
+//                                40: rgba(45, 45, 53, 0.4),
+//                                20: rgba(45, 45, 53, 0.2),
+//                                10: rgba(45, 45, 53, 0.1),
+//                                5: rgba(45, 45, 53, 0.05),
+//                                025: rgba(45, 45, 53, 0.025),
+//                        ),
+//                ),
+//                background: (
+//                        primary: (
+//                                100: rgba(255, 255, 255, 1),
+//                        ),
+//                        secondary: (
+//                                100: rgba(243, 243, 243, 1),
+//                        ),
+//                        accent: (
+//                                linear-gradient(90deg, #3C3C51 0%, #7B363A 99.9%),
+//                        ),
+//                ),
+//                interface: (
+//                        general-light-theme: (
+//                                100: rgba(28, 28, 28, 1),
+//                                80: rgba(28, 28, 28, 0.8),
+//                                60: rgba(28, 28, 28, 0.6),
+//                                40: rgba(28, 28, 28, 0.4),
+//                                20: rgba(28, 28, 28, 0.2),
+//                                10: rgba(28, 28, 28, 0.1),
+//                                5: rgba(28, 28, 28, 0.05),
+//                                025: rgba(28, 28, 28, 0.025),
+//                        ),
+//                        general-dark-theme: (
+//                                100: rgba(255, 255, 255, 1),
+//                                80: rgba(255, 255, 255, 0.8),
+//                                60: rgba(255, 255, 255, 0.6),
+//                                40: rgba(255, 255, 255, 0.4),
+//                                20: rgba(255, 255, 255, 0.2),
+//                                10: rgba(255, 255, 255, 0.1),
+//                                5: rgba(255, 255, 255, 0.05),
+//                        ),
+//                        accent: (
+//                                linear-gradient(121.33deg, #323232 31.08%, #FF4E05 100%),
+//                        ),
+//                ),
+//                brand: (
+//                        primary: (
+//                                100: rgba(242, 97, 38, 1),
+//                                80: rgba(242, 97, 38, 0.8),
+//                                60: rgba(242, 97, 38, 0.6),
+//                                40: rgba(242, 97, 38, 0.4),
+//                                20: rgba(242, 97, 38, 0.2),
+//                                10: rgba(242, 97, 38, 0.1),
+//                        ),
+//                        secondary: (
+//                                100: rgba(68, 73, 219, 1),
+//                                80: rgba(68, 73, 219, 0.8),
+//                                60: rgba(68, 73, 219, 0.6),
+//                                40: rgba(68, 73, 219, 0.4),
+//                                20: rgba(68, 73, 219, 0.2),
+//                                10: rgba(68, 73, 219, 0.1),
+//                        ),
+//                ),
+//        )
+//);
+
+// grid //
+// grid-breakpoints
+//$xs: 0px;
+//$sm: 768px;
+//$md: 1024px;
+//$lg: 1440px;
+//$xl: 1600px;
+//$xxl: 1920px;
+//// container-max-widths
+//$container-max-widths-xs: 100%;
+//$container-max-widths-sm: 100%;
+//$container-max-widths-md: 864px;
+//$container-max-widths-lg: 960px;
+//$container-max-widths-xl: 1080px;
+//$container-max-widths-xxl: 1200px;
+//$container-padding-xl: 32px;
+//$container-padding-xs: 16px;
+//// column=gutter
+//$gutter: 8px;
+

@@ -1,0 +1,65 @@
+.ts-checkbox {
+  input[type='checkbox'] {
+    display: none;
+
+    & + label {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      padding-left: 32px;
+      cursor: pointer;
+
+      span {
+        @include ty-paragraph-medium;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--clr-border);
+        border-radius: 3px;
+      }
+
+      &:hover {
+        &::before {
+          background-color: var(--clr-hover);
+          border: transparent;
+        }
+      }
+    }
+
+    &:checked {
+      & + label {
+        &::before {
+          background-color: var(--clr-general-black-100);
+          border-color: var(--clr-general-black-100);
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 5px;
+          top: 10px;
+          width: 11px;
+          height: 8px;
+          background-image: url(../icons/checked.svg);
+        }
+
+        &:hover {
+          &::before {
+            background-color: var(--clr-general-black-90);
+            border: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  &.disabled {
+    opacity: .5;
+  }
+}

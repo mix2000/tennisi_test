@@ -1,0 +1,122 @@
+:root {
+  //general white
+  --clr-general-white-100: rgba(255, 255, 255, 1);
+  --clr-general-white-90: rgba(255, 255, 255, 0.9);
+  --clr-general-white-80: rgba(255, 255, 255, 0.8);
+  --clr-general-white-60: rgba(255, 255, 255, 0.6);
+  --clr-general-white-40: rgba(255, 255, 255, 0.4);
+  --clr-general-white-20: rgba(255, 255, 255, 0.2);
+  --clr-general-white-10: rgba(255, 255, 255, 0.1);
+  --clr-general-white-5: rgba(255, 255, 255, 0.05);
+  --clr-general-white-025: rgba(255, 255, 255, 0.025);
+
+  //general black
+  --clr-general-black-100: rgba(45, 45, 53, 1);
+  --clr-general-black-90: rgba(45, 45, 53, 0.9);
+  --clr-general-black-80: rgba(45, 45, 53, 0.8);
+  --clr-general-black-60: rgba(45, 45, 53, 0.6);
+  --clr-general-black-40: rgba(45, 45, 53, 0.4);
+  --clr-general-black-20: rgba(45, 45, 53, 0.2);
+  --clr-general-black-10: rgba(45, 45, 53, 0.1);
+  --clr-general-black-5: rgba(45, 45, 53, 0.05);
+  --clr-general-black-025: rgba(45, 45, 53, 0.025);
+
+  //accent
+  --clr-accent: #E12B4B;
+
+  //brand primary
+  --clr-brand-primary-100: rgba(225, 43, 75, 1);
+  --clr-brand-primary-80: rgba(225, 43, 75, 0.8);
+  --clr-brand-primary-60: rgba(225, 43, 75, 0.6);
+  --clr-brand-primary-40: rgba(225, 43, 75, 0.4);
+  --clr-brand-primary-20: rgba(225, 43, 75, 0.2);
+  --clr-brand-primary-10: rgba(225, 43, 75, 0.1);
+  --clr-brand-primary-5: rgba(225, 43, 75, 0.05);
+  --clr-brand-primary-025: rgba(225, 43, 75, 0.025);
+
+  //brand secondary
+  --clr-brand-secondary-100: rgba(255, 235, 88, 1);
+  --clr-brand-secondary-80: rgba(255, 235, 88, 0.8);
+  --clr-brand-secondary-60: rgba(255, 235, 88, 0.6);
+  --clr-brand-secondary-40: rgba(255, 235, 88, 0.4);
+  --clr-brand-secondary-20: rgba(255, 235, 88, 0.2);
+  --clr-brand-secondary-10: rgba(255, 235, 88, 0.1);
+  --clr-brand-secondary-5: rgba(255, 235, 88, 0.05);
+  --clr-brand-secondary-025: rgba(255, 235, 88, 0.025);
+
+  //border
+  --clr-border: #E6E6F0;
+
+  //hover
+  --clr-hover: #F7F7FF;
+
+  //gray
+  --clr-gray: rgba(159, 159, 176, 1);
+
+  //btn span
+  --clr-btn-span: rgba(236, 236, 246, 1);
+
+  //btn dark
+  --clr-btn-dark: rgba(88, 88, 97, 1);
+
+  //graphic view
+  --clr-graphic-view: rgba(243, 243, 243, 1);
+}
+
+body.dark-theme {
+  //background primary
+  --clr-bg-primary: #38383F;
+
+  //background secondary
+  --clr-bg-secondary: #2D2D35;
+
+  //interface primary
+  --clr-interface-primary-100: rgba(255, 255, 255, 1);
+  --clr-interface-primary-80: rgba(255, 255, 255, 0.8);
+  --clr-interface-primary-60: rgba(255, 255, 255, 0.6);
+  --clr-interface-primary-40: rgba(255, 255, 255, 0.4);
+  --clr-interface-primary-20: rgba(255, 255, 255, 0.2);
+  --clr-interface-primary-10: rgba(255, 255, 255, 0.1);
+  --clr-interface-primary-5: rgba(255, 255, 255, 0.05);
+  --clr-interface-primary-025: rgba(255, 255, 255, 0.025);
+}
+
+body.light-theme {
+  //background primary
+  --clr-bg-primary: #FFFFFF;
+
+  //background secondary
+  --clr-bg-secondary: #F7F7FF;
+
+  //interface primary
+  --clr-interface-primary-100: rgba(45, 45, 53, 1);
+  --clr-interface-primary-80: rgba(45, 45, 53, 0.8);
+  --clr-interface-primary-60: rgba(45, 45, 53, 0.6);
+  --clr-interface-primary-40: rgba(45, 45, 53, 0.4);
+  --clr-interface-primary-20: rgba(45, 45, 53, 0.2);
+  --clr-interface-primary-10: rgba(45, 45, 53, 0.1);
+  --clr-interface-primary-5: rgba(45, 45, 53, 0.05);
+  --clr-interface-primary-025: rgba(45, 45, 53, 0.025);
+
+  //interface secondary
+  --clr-interface-secondary-100: rgba(149, 149, 167, 1);
+  --clr-interface-secondary-80: rgba(149, 149, 167, 0.8);
+  --clr-interface-secondary-60: rgba(149, 149, 167, 0.6);
+  --clr-interface-secondary-40: rgba(149, 149, 167, 0.4);
+  --clr-interface-secondary-20: rgba(149, 149, 167, 0.2);
+  --clr-interface-secondary-10: rgba(149, 149, 167, 0.1);
+  --clr-interface-secondary-5: rgba(149, 149, 167, 0.05);
+  --clr-interface-secondary-025: rgba(149, 149, 167, 0.025);
+
+  //interface tertiary
+  --clr-interface-tertiary-100: rgba(255, 255, 255, 1);
+  --clr-interface-tertiary-80: rgba(255, 255, 255, 0.8);
+  --clr-interface-tertiary-60: rgba(255, 255, 255, 0.6);
+  --clr-interface-tertiary-40: rgba(255, 255, 255, 0.4);
+  --clr-interface-tertiary-20: rgba(255, 255, 255, 0.2);
+  --clr-interface-tertiary-10: rgba(255, 255, 255, 0.1);
+  --clr-interface-tertiary-5: rgba(255, 255, 255, 0.05);
+  --clr-interface-tertiary-025: rgba(255, 255, 255, 0.025);
+}
+
+

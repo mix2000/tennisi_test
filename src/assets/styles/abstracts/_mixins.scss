@@ -1,0 +1,84 @@
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font-size($font-weight, $font-size, $line-height) {
+  font-weight: $font-weight;
+  font-size: #{$font-size}px;
+  line-height: #{$line-height}px;
+}
+
+@mixin cover-background($bgs: cover) {
+  background-repeat: no-repeat;
+  background-size: $bgs;
+  background-position: center;
+}
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font-size($font-weight, $font-size, $line-height) {
+  font-weight: $font-weight;
+  font-size: #{$font-size}px;
+  line-height: #{$line-height}px;
+}
+
+@mixin cover-background($bgs: cover) {
+  background-repeat: no-repeat;
+  background-size: $bgs;
+  background-position: center;
+}
+// // Медиа запросы
+
+// @mixin media-max($max-width) {
+// 	@media only screen and (max-width: $max-width * 1px) {
+// 		@content;
+// 	}
+// }
+
+// @mixin media-min($min-width) {
+// 	@media only screen and (min-width: $min-width * 1px) {
+// 		@content;
+// 	}
+// }
+
+// @mixin min-xxl {
+// 	@media only screen and (min-width: $xxl) {
+// 		@content;
+// 	}
+// }
+
+// @mixin min-xl {
+// 	@media only screen and (min-width: $xl) {
+// 		@content;
+//   	}
+// }
+
+// @mixin min-lg {
+// 	@media only screen and (min-width: $lg) {
+//     	@content;
+//   	}
+// }
+
+// @mixin min-md {
+// 	@media only screen and (min-width: $md) {
+//     	@content;
+//   	}
+// }
+
+// @mixin min-sm {
+// 	@media only screen and (min-width: $sm) {
+//     	@content;
+//   	}
+// }
+
+// @mixin min-xs {
+// 	@media only screen and (min-width: $xs) {
+//     	@content;
+//   	}
+// }
+
+
+

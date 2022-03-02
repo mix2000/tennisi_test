@@ -1,0 +1,88 @@
+//@for $i from 8 through 96 {
+//  @if $i <= 20 {
+//    @if $i % 2 == 0 {
+//      .graphic-view-square-#{$i} {
+//        width: ($i) * 1px;
+//        height: ($i) * 1px;
+//        @include cover-background;
+//      }
+//      .graphic-view-сircle-#{$i} {
+//        width: ($i) * 1px;
+//        height: ($i) * 1px;
+//        border-radius: 50%;
+//        @include cover-background;
+//      }
+//    }
+//  }
+//  @if $i>20 and $i <= 64 {
+//    @if $i % 4 == 0 {
+//      .graphic-view-square-#{$i} {
+//        width: ($i) * 1px;
+//        height: ($i) * 1px;
+//        @include cover-background;
+//      }
+//      .graphic-view-сircle-#{$i} {
+//        width: ($i) * 1px;
+//        height: ($i) * 1px;
+//        border-radius: 50%;
+//        @include cover-background;
+//      }
+//      .graphic-view-circle-wb-#{$i} {
+//        width: ($i) * 1px;
+//        height: ($i) * 1px;
+//        border-radius: 50%;
+//        @include cover-background(contain);
+//        background-color: #eee;
+//      }
+//    }
+//  }
+//  @if $i>64 and $i <= 96 {
+//    @if $i % 8 == 0 {
+//      .graphic-view-square-#{$i} {
+//        width: ($i) * 1px;
+//        height: ($i) * 1px;
+//        @include cover-background;
+//      }
+//      .graphic-view-сircle-#{$i} {
+//        width: ($i) * 1px;
+//        height: ($i) * 1px;
+//        border-radius: 50%;
+//        @include cover-background;
+//      }
+//      .graphic-view-circle-wb-#{$i} {
+//        width: ($i) * 1px;
+//        height: ($i) * 1px;
+//        border-radius: 50%;
+//        @include cover-background(contain);
+//        background-color: #eee;
+//      }
+//    }
+//  }
+//}
+
+@mixin graphic-view($size, $radius: 0, $bgc: "") {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: #{$size}px;
+  height: #{$size}px;
+  @if $radius != 0 {
+    border-radius: 50%;
+  }
+  @if $bgc != "" {
+    background-color: $bgc;
+  }
+}
+
+.ts--graphic-view {
+  width: 24px;
+  height: 24px;
+
+  &_circle {
+    border-radius: 50%;
+  }
+
+  &_with-bg {
+    background-color: var(--clr-graphic-view);
+  }
+}

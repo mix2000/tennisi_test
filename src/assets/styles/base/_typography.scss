@@ -1,0 +1,89 @@
+//@each $name, $sizes in $typography {
+//  @each $size, $weights in $sizes {
+//    $weight: map_get($weights, font-weight);
+//    @each $weight-name, $weight-value in $weight {
+//     %ty-#{$name}-#{$size}-#{$weight-value} {
+//        @each $property, $value in $weights {
+//          @if $property == 'font-weight' {
+//            #{$property}: #{$weight-value};
+//          }
+//          @else {
+//            #{$property}: #{$value};
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+
+//Accent Large
+@mixin ty-accent-large($weight: normal) {
+  font-size: 40px;
+  line-height: 40px;
+  padding-top: 13px;
+  padding-bottom: 6px;
+  font-weight: #{$weight};
+}
+
+//Headline Large
+@mixin ty-headline-large($weight: normal) {
+  font-size: 24px;
+  line-height: 32px;
+  padding-top: 13px;
+  padding-bottom: 6px;
+  font-weight: #{$weight};
+}
+
+//Headline Medium
+@mixin ty-headline-medium($weight: normal) {
+  font-size: 20px;
+  line-height: 28px;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  font-weight: #{$weight};
+}
+
+//Headline Small
+@mixin ty-headline-small($weight: normal) {
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  font-weight: #{$weight};
+}
+
+//Paragraph Large
+@mixin ty-paragraph-large($weight: normal) {
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 3px;
+  padding-bottom: 0;
+  font-weight: #{$weight};
+}
+
+//Paragraph Medium
+@mixin ty-paragraph-medium($weight: normal) {
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  font-weight: #{$weight};
+}
+
+//Paragraph Small
+@mixin ty-paragraph-small($weight: normal) {
+  font-size: 12px;
+  line-height: 20px;
+  padding-top: 3px;
+  padding-bottom: 1px;
+  font-weight: #{$weight};
+}
+
+//Paragraph Tiny
+@mixin ty-paragraph-tiny($weight: normal) {
+  font-size: 10px;
+  line-height: 10px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  font-weight: #{$weight};
+}

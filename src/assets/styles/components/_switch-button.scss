@@ -1,0 +1,59 @@
+.ts--switch-button {
+  > input {
+    display: none;
+
+    &+label {
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding-left: 52px;
+      line-height: 24px;
+      
+      &::before {
+        content: '';
+        width: 40px;
+        height: 24px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 20px;
+        background-color: var(--clr-gray);
+        z-index: 1;
+
+        &:hover {
+          opacity: .9;
+        }
+      }
+
+      &::after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        border-radius: 50%;
+        background-color: var(--clr-general-white-100);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        z-index: 2;
+      }
+    }
+
+    &:checked {
+      &+label {
+        &::before {
+          background-color: var(--clr-general-black-100);
+        }
+
+        &::after {
+          left: 20px;
+        }
+      }
+    }
+  }
+
+  &.disabled {
+    opacity: .5;
+  }
+}

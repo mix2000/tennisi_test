@@ -1,0 +1,40 @@
+.ts--chips-item {
+  input[type='checkbox'] {
+    display: none;
+    &+label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2px 12px 4px;
+      background-color: transparent;
+      cursor: pointer;
+      border-radius: 8px;
+      span {
+        @include ty-paragraph-medium;
+        color: var(--clr-general-black-100);
+      }
+
+      &:hover {
+        background-color: var(--clr-hover);
+      }
+    }
+
+    &:checked {
+      &+label {
+        background-color: var(--clr-general-black-100);
+
+        span {
+          color: var(--clr-general-white-100);
+        }
+
+        &:hover {
+          opacity: .9;
+        }
+      }
+    }
+  }
+
+  &.disabled {
+    opacity: .4;
+  }
+}

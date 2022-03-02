@@ -1,0 +1,60 @@
+.ts--tabs {
+  &__controls {
+    display: inline-flex;
+    align-items: center;
+
+    &_bordered {
+      border-bottom: 1px solid #E6E6F0;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    padding: 0 12px;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+
+    span {
+      display: block;
+      position: relative;
+      color: rgba(159, 159, 176, 1);
+      @include ty-paragraph-large;
+      padding-bottom: 23px;
+
+      &::after {
+        content: '';
+        background-color: transparent;
+        border-radius: 2px 2px 0 0;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+      }
+    }
+
+    &.active {
+      span {
+        color: rgba(45, 45, 53, 1);
+      }
+
+      span {
+        &::after {
+          background-color: var(--clr-brand-primary-100);
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    margin-top: 24px;
+  }
+
+  &__content {}
+}
