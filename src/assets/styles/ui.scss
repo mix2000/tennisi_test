@@ -11,21 +11,21 @@
 @import "base/colors";
 @import "base/typography";
 @import "base/base";
-@import "base/graphic-view";
-//@import "base/animations";
+@import "base/animations";
 
 // Layout
-//@import "layout/grid";
+@import "layout/grid";
 
 // Components
+@import "components/graphic-view";
 @import "components/tags";
 @import "components/checkbox";
 @import "components/radio";
 @import "components/radio-box";
 @import "components/switch-button";
 @import "components/chips";
-@import "components/button";
 @import "components/icons";
+@import "components/button";
 @import "components/tabs";
 
 .test-h1 {

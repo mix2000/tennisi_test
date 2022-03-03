@@ -11,6 +11,7 @@
  * @param {boolean} darkColor тёмная ли кнопка
  * @param {boolean} brandColor красная ли кнопка
  * @param {boolean} textRight справа ли текст
+ * @param {string} borderRadius закругление кнопки
  */
 
 export interface Ibutton {
@@ -21,7 +22,8 @@ export interface Ibutton {
     disabled?: boolean,
     lightColor?: boolean,
     darkColor?: boolean,
-    brandColor?: boolean
+    brandColor?: boolean,
+    borderRadius?: string
 }
 
 export interface IbuttonWithAddedText extends Ibutton {
@@ -31,9 +33,5 @@ export interface IbuttonWithAddedText extends Ibutton {
 
 export interface IbuttonWithIcon extends Ibutton {
     iconRight?: boolean,
-    withoutText?: boolean
-}
-
-export interface IbuttonCircle extends Ibutton {
-    rounded?: boolean,
+    withoutText?: boolean,
 }

@@ -2,34 +2,35 @@ import React, {useState, useEffect} from 'react';
 import "./assets/styles/ui.css"
 
 // checkbox
-import {CheckboxList} from "./components/checkbox/CheckboxList";
 import {ICheckbox} from "./components/checkbox/Models";
+import {CheckboxItem} from "./components/checkbox/Checbox";
+import {CheckboxList} from "./components/checkbox/Checbox";
 
 // tags
-import {TagsList} from "./components/tags/TagsList";
-
-// tag
-import {TagItem} from "./components/tags/TagItem";
+import {TagItem} from "./components/tags/Tags";
+import {TagsList} from "./components/tags/Tags";
 
 // chips
-import {ChipsList} from "./components/chips/ChipsList";
-
-// демо объекты (mocks)
-import {checkboxArr} from "./assets/mocks/checkbox";
-import {tagsArray} from "./assets/mocks/tags";
-import {chipsArr} from "./assets/mocks/chips";
-
-import {CheckboxItem} from "./components/checkbox/CheckboxItem";
-import {ChipsItem} from "./components/chips/ChipsItem";
 import {IChips} from "./components/chips/Models";
-import {RadioItem} from "./components/radio/RadioItem";
-import {RadioList} from "./components/radio/RadioList";
+import {ChipsItem} from "./components/chips/Chips";
+import {ChipsList} from "./components/chips/Chips";
+
+// radio
 import {IRadio, IRadioBox} from "./components/radio/Models";
-import {radioArr} from "./assets/mocks/radio";
-import {RadioBoxItem} from "./components/radio/RadioBoxItem";
-import {RadioBoxesList} from "./components/radio/RadioBoxList";
-import {radioBoxArr} from "./assets/mocks/radio-box";
+import {RadioItem} from "./components/radio/Radio";
+import {RadioList} from "./components/radio/Radio";
+
+//radiobox
+import {RadioBoxItem} from "./components/radio/RadioBox";
+import {RadioBoxesList} from "./components/radio/RadioBox";
+
+// switch-button
 import {SwitchButton} from "./components/switch-button/SwitchButton";
+
+// button
+import {Button, ButtonWithAddedText} from "./components/button/Button";
+
+// icons
 import {
     Icon_Sport_Basketball,
     Icon_Sport_Box,
@@ -38,8 +39,16 @@ import {
     Icon_Sport_Tennis,
     Icon_Sport_Volleyball
 } from "./components/icons/Icon";
-import {Button, ButtonWithAddedText} from "./components/button/Button";
+
+// tabs
 import {TabsContent, TabsContentWrapper, TabsControls, TabsItem, TabsWrapper} from "./components/tabs/Tabs";
+
+// демо объекты (mocks)
+import {checkboxArr} from "./assets/mocks/checkbox";
+import {tagsArray} from "./assets/mocks/tags";
+import {chipsArr} from "./assets/mocks/chips";
+import {radioArr} from "./assets/mocks/radio";
+import {radioBoxArr} from "./assets/mocks/radio-box";
 
 
 const App: React.FC = () => {
@@ -165,85 +174,84 @@ const App: React.FC = () => {
 
             {/*<TagsList tagsArr={tagsArray.filter((item) => item.id === 1)} />*/}
 
-            <div className="row">
-                <TagItem key={'tag-5'} value={'Test'} disabled={false} />
-            </div>
+            {/*<div className="row">*/}
+            {/*    <TagItem key={'tag-5'} value={'Test'} disabled={false} />*/}
+            {/*</div>*/}
 
-            <div className="row">
-                <ChipsItem onToggle={handleOnChange} value={'Test123'} id={4} name={'test123'} checked={isChecked}/>
-            </div>
+            {/*<div className="row">*/}
+            {/*    <ChipsItem onToggle={handleOnChange} value={'Test123'} id={4} name={'test123'} checked={isChecked}/>*/}
+            {/*</div>*/}
             
-            <div className="row">
-                <ChipsList chipsArr={chips} onToggle={toggleHandlerChips}/>
-            </div>
+            {/*<div className="row">*/}
+            {/*    <ChipsList chipsArr={chips} onToggle={toggleHandlerChips}/>*/}
+            {/*</div>*/}
 
-            <div className="row">
-                <CheckboxItem onToggle={handleOnChangeTwo} value={'Test123'} id={21} name={'test'} checked={isCheckedTwo}/>
-            </div>
+            {/*<div className="row">*/}
+            {/*    <CheckboxItem onToggle={handleOnChangeTwo} value={'Test123'} id={21} name={'test'} checked={isCheckedTwo}/>*/}
+            {/*</div>*/}
 
-            <div className="row">
-                <CheckboxList checkboxes={checkboxes} onToggle={toggleHandlerCheckboxes}/>
-            </div>
+            {/*<div className="row">*/}
+            {/*    <CheckboxList checkboxes={checkboxes} onToggle={toggleHandlerCheckboxes}/>*/}
+            {/*</div>*/}
 
-            <div className="row">
-                <RadioItem onToggle={handleOnChangeThree} value={'Test Radio'} id={345} name={'test-radio'} checked={isCheckedThree}/>
-            </div>
+            {/*<div className="row">*/}
+            {/*    <RadioItem onToggle={handleOnChangeThree} value={'Test Radio'} id={345} name={'test-radio'} checked={isCheckedThree}/>*/}
+            {/*</div>*/}
 
-            <div className="row">
-                <RadioList radios={radios} onToggle={toggleHandlerRadios}/>
-            </div>
+            {/*<div className="row">*/}
+            {/*    <RadioList radios={radios} onToggle={toggleHandlerRadios}/>*/}
+            {/*</div>*/}
 
-            <div className="row">
-                <RadioBoxItem onToggle={handleOnChangeFour} checked={isCheckedFour} title={"Test title"} value={"Test Custom Radio Box"} id={213}/>
-            </div>
+            {/*<div className="row">*/}
+            {/*    <RadioBoxItem onToggle={handleOnChangeFour} checked={isCheckedFour} title={"Test title"} value={"Test Custom Radio Box"} id={213}/>*/}
+            {/*</div>*/}
 
-            <div className="row">
-                <RadioBoxesList radioBoxes={radioBoxes} onToggle={toggleHandlerRadioBoxes}/>
-            </div>
+            {/*<div className="row">*/}
+            {/*    <RadioBoxesList radioBoxes={radioBoxes} onToggle={toggleHandlerRadioBoxes}/>*/}
+            {/*</div>*/}
 
-            <div className="row">
-                <SwitchButton onToggle={handleOnChangeFive} id={234} value={"Switch Test"} checked={isCheckedFive} labelValue={"Test"} />
-            </div>
+            {/*<div className="row">*/}
+            {/*    <SwitchButton onToggle={handleOnChangeFive} id={234} value={"Switch Test"} checked={isCheckedFive} labelValue={"Test"} />*/}
+            {/*</div>*/}
 
-            <div className="row">
-                <Icon_Sport_Football width={24} height={25} strokeWidth={0.2}/>
-                <Icon_Sport_Basketball fill={"orange"}/>
-                <Icon_Sport_Volleyball/>
-                <Icon_Sport_Tennis/>
-                <Icon_Sport_Box/>
-                <Icon_Sport_Handball/>
-                <Icon_Sport_Rugby/>
-                <Icon_Sport_Racing/>
-                <Icon_Sport_TableTennis/>
-                {/*<Icon type={'tennis'}/>*/}
-            </div>
+            {/*<div className="row">*/}
+            {/*    <Icon_Sport_Football width={24} height={25} strokeWidth={0.2}/>*/}
+            {/*    <Icon_Sport_Basketball fill={"orange"}/>*/}
+            {/*    <Icon_Sport_Volleyball/>*/}
+            {/*    <Icon_Sport_Tennis/>*/}
+            {/*    <Icon_Sport_Box/>*/}
+            {/*    <Icon_Sport_Handball/>*/}
+            {/*    <Icon_Sport_Rugby/>*/}
+            {/*    <Icon_Sport_Racing/>*/}
+            {/*    <Icon_Sport_TableTennis/>*/}
+            {/*</div>*/}
 
-            <div className="row">
-                <Button title={"Title"} lightColor={true}/>
-                <Button title={"Test"} darkColor={true}/>
-                <Button title={"Test"}/>
-                <Button title={"Test Brand"} brandColor={true}/>
-            </div>
+            {/*<div className="row">*/}
+            {/*    <Button title={"Title"} lightColor={true}/>*/}
+            {/*    <Button title={"Test"} darkColor={true}/>*/}
+            {/*    <Button title={"Test"}/>*/}
+            {/*    <Button title={"Test Brand"} brandColor={true}/>*/}
+            {/*</div>*/}
 
-            <div className="row">
-                <ButtonWithAddedText textValue={"10"} title={"Title"} lightColor={true}/>
-                <ButtonWithAddedText textValue={"10"} textRight={false} title={"Test"} darkColor={true}/>
-                <ButtonWithAddedText textValue={"10"} title={"Test"}/>
-            </div>
+            {/*<div className="row">*/}
+            {/*    <ButtonWithAddedText textValue={"10"} title={"Title"} lightColor={true}/>*/}
+            {/*    <ButtonWithAddedText textValue={"10"} textRight={false} title={"Test"} darkColor={true}/>*/}
+            {/*    <ButtonWithAddedText textValue={"10"} title={"Test"}/>*/}
+            {/*</div>*/}
 
-            <div className="row">
-                <TabsWrapper>
-                    <TabsControls isBordered={true}>
-                        <TabsItem value={'Test tab Item 1'} isActive={true}/>
-                        <TabsItem value={'Test tab Item 2'} isActive={false}/>
-                    </TabsControls>
-                    <TabsContentWrapper>
-                        <TabsContent>
-                            Test
-                        </TabsContent>
-                    </TabsContentWrapper>
-                </TabsWrapper>
-            </div>
+            {/*<div className="row">*/}
+            {/*    <TabsWrapper>*/}
+            {/*        <TabsControls isBordered={true}>*/}
+            {/*            <TabsItem value={'Test tab Item 1'} isActive={true}/>*/}
+            {/*            <TabsItem value={'Test tab Item 2'} isActive={false}/>*/}
+            {/*        </TabsControls>*/}
+            {/*        <TabsContentWrapper>*/}
+            {/*            <TabsContent>*/}
+            {/*                Test*/}
+            {/*            </TabsContent>*/}
+            {/*        </TabsContentWrapper>*/}
+            {/*    </TabsWrapper>*/}
+            {/*</div>*/}
         </div>
     );
 }

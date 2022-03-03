@@ -38,7 +38,7 @@ body, html {
 
 .row {
   display: flex;
-  @include mv(12);
+  @include mv(24);
 
   &>* {
     margin: 0 6px;

@@ -47,7 +47,7 @@ export const TabsContent: React.FC<ITabsContent> = ({id, className= "ts--tabs__c
     );
 }
 
-export const TabsItem: React.FC<ITabsItems> = ({id, className= "ts--tabs__item", value, isActive}) => {
+export const TabsItem: React.FC<ITabsItems> = ({id, className= "ts--tabs__item", value, isActive, onToggle, index}) => {
 
     let tabItemClassName = className;
     if (isActive) {

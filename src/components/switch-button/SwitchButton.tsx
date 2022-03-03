@@ -31,7 +31,7 @@ export const SwitchButton: React.FC<ISwitchButtonsItem> =
 
     return (
         <>
-            <div key={id} className={switchButtonsItemClass}>
+            <div key={'switch-key' + id} className={switchButtonsItemClass}>
                 <input id={`switch-${id}`} name={name} type="checkbox" checked={checked}
                        onChange={onToggle.bind(null, id)}/>
                 {labelElem}
