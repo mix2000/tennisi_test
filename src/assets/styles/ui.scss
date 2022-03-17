@@ -27,10 +27,10 @@
 @import "components/icons";
 @import "components/button";
 @import "components/tabs";
+@import "components/search";
 
 .test-h1 {
   @include mv(46);
   @include ty-headline-large(bold);
   color: var(--clr-general-black-100);
-  //@include graphic-view(24, 1, #000);
 }

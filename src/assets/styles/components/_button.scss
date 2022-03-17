@@ -2,7 +2,7 @@
   border-radius: 8px;
 
   &.disabled {
-    &>* {
+    & > * {
       opacity: .4;
     }
   }
@@ -34,8 +34,12 @@
     }
   }
 
-  &_circle {
+  &_rounded {
     border-radius: 50%;
+
+    a {
+      padding: 4px;
+    }
   }
 
   &_light {
@@ -89,14 +93,14 @@
   }
 
   &_icon-left {
-    &:last-of-type {
-      padding-left: 12px;
+    .ts--graphic-view {
+      margin-right: 12px;
     }
   }
 
   &_icon-right {
-    &:last-of-type {
-      padding-right: 12px;
+    .ts--graphic-view {
+      margin-left: 12px;
     }
   }
 }

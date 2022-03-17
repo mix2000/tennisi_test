@@ -6,7 +6,7 @@ export const radioBoxArr: IRadioBox[] = [
     {
         value: "Test",
         title: "Title",
-        id: 33,
+        id: 3333,
         className: ERadioBoxClass.TS_RADIOBOX,
         name: "radio-box",
         disabled: false,
@@ -15,7 +15,7 @@ export const radioBoxArr: IRadioBox[] = [
     {
         value: "Test",
         title: "Title",
-        id: 44,
+        id: 4444,
         className: ERadioBoxClass.TS_RADIOBOX,
         name: "radio-box",
         disabled: true,
@@ -24,7 +24,7 @@ export const radioBoxArr: IRadioBox[] = [
     {
         value: "Test",
         title: "Title",
-        id: 55,
+        id: 5555,
         className: ERadioBoxClass.TS_RADIOBOX,
         name: "radio-box",
         disabled: false,
@@ -33,7 +33,7 @@ export const radioBoxArr: IRadioBox[] = [
     {
         value: "Test",
         title: "Title",
-        id: 66,
+        id: 6666,
         className: ERadioBoxClass.TS_RADIOBOX,
         name: "radio-box",
         disabled: true,

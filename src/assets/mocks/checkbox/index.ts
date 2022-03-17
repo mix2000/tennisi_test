@@ -5,7 +5,7 @@ import {ECheckBoxClass} from "../../../components/checkbox/Enums";
 export const checkboxArr: ICheckbox[] = [
     {
         value: "Title",
-        id: 3,
+        id: 33333333333,
         className: ECheckBoxClass.TS_CHECKBOX,
         name: "checkbox",
         disabled: false,
@@ -13,7 +13,7 @@ export const checkboxArr: ICheckbox[] = [
     },
     {
         value: "Title",
-        id: 4,
+        id: 444444444444,
         className: ECheckBoxClass.TS_CHECKBOX,
         name: "checkbox",
         disabled: true,
@@ -21,7 +21,7 @@ export const checkboxArr: ICheckbox[] = [
     },
     {
         value: "Title",
-        id: 5,
+        id: 555555555555,
         className: ECheckBoxClass.TS_CHECKBOX,
         name: "checkbox",
         disabled: false,
@@ -29,7 +29,7 @@ export const checkboxArr: ICheckbox[] = [
     },
     {
         value: "Title",
-        id: 6,
+        id: 6666666666,
         className: ECheckBoxClass.TS_CHECKBOX,
         name: "checkbox",
         disabled: true,

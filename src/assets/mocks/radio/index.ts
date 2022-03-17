@@ -5,7 +5,7 @@ import {ERadioClass} from "../../../components/radio/Enums";
 export const radioArr: IRadio[] = [
     {
         value: "Title",
-        id: 3,
+        id: 333,
         className: ERadioClass.TS_RADIO,
         name: "radio",
         disabled: false,
@@ -13,7 +13,7 @@ export const radioArr: IRadio[] = [
     },
     {
         value: "Title",
-        id: 4,
+        id: 444,
         className: ERadioClass.TS_RADIO,
         name: "radio",
         disabled: true,
@@ -21,7 +21,7 @@ export const radioArr: IRadio[] = [
     },
     {
         value: "Title",
-        id: 5,
+        id: 555,
         className: ERadioClass.TS_RADIO,
         name: "radio",
         disabled: false,
@@ -29,7 +29,7 @@ export const radioArr: IRadio[] = [
     },
     {
         value: "Title",
-        id: 6,
+        id: 666,
         className: ERadioClass.TS_RADIO,
         name: "radio",
         disabled: true,

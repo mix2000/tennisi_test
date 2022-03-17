@@ -1,3 +1,5 @@
+import {EIconName} from "./Enums";
+
 /**
  Интерфейс Icon
 
@@ -11,9 +13,9 @@
 
 export interface IIcons {
     className?: string,
-    strokeWidth?: number | string,
+    strokeWidth?: string,
     fill?: string,
     width?: number,
     height?: number,
-    type?: string
+    type?: EIconName
 }

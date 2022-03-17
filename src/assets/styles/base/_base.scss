@@ -25,6 +25,16 @@ button {
   cursor: pointer;
 }
 
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
+
 body, html {
   font-family: 'PF DinDisplay Pro';
   font-weight: normal;

@@ -1,18 +1,14 @@
-
 /**
  * интерфейс табов
  *
  * @param {string} value значение элемента
  * @param {string} id id элемента
- * @param {number} index index элемента
  * @param {string} className класс элемента
  * @param {boolean} isActive активность элемента
  * @param {boolean} isBordered присутствие border у TabsControls
  */
 
 export interface ITabsGeneral {
-    index?: number,
-    id?: string,
     className?: string,
 }
 
@@ -21,11 +17,13 @@ export interface ITabsControls extends ITabsGeneral {
 }
 
 export interface ITabsContent extends ITabsGeneral {
+    id: number,
     isActive?: boolean
 }
 
-export interface ITabsItems extends ITabsGeneral {
+export interface ITabsItem extends ITabsGeneral {
+    id: number,
     value: string,
-    isActive?: boolean
-    onToggle?: (id: number) => void,
+    isActive?: boolean,
+    onToggle: (id: number) => void,
 }

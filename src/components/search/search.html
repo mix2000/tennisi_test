@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search</title>
+    <link rel="stylesheet" href="../../assets/styles/ui.css">
+</head>
+<body>
+
+<div class="ts--search">
+    <!--    Поле поиска-->
+    <div class="ts--search__input-wrapper">
+        <div class="ts--search__icon">
+            <div class="ts--graphic-view">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="11.6729" cy="11.4823" rx="7.48231" ry="7.48231" stroke="#2D2D35" stroke-width="1.5"
+                             stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.876 17.0741L19.8095 20" stroke="#2D2D35" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+        <input id="search" type="search" placeholder="Поиск"/>
+        <div class="ts--search__remove">
+            <div class="ts--graphic-view ts--graphic-view_circle ts--graphic-view_with-bg">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.994 5.0057L5.00859 18.9911M18.9985 19L5.00146 5" stroke="#9F9FB0" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!--    обёртка результата-->
+    <div class="ts--search__result-wrapper">
+        <!--        предложенные варианты-->
+        <div class="ts--suggestion">
+            <div class="ts--result__wrapper">
+                <div class="ts--search__result-title ts--suggestion__title">Часто ищут</div>
+                <div class="ts--result__list">
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                    </a>
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                    </a>
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--        обёртка результата-->
+        <div class="ts--result">
+            <div class="ts--result__wrapper">
+                <div class="ts--search__result-title">Виды спорта</div>
+                <div class="ts--search-result-list">
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                        <div class="ts--result__quantity"><span>181</span></div>
+                    </a>
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                        <div class="ts--result__quantity"><span>181</span></div>
+                    </a>
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                        <div class="ts--result__quantity"><span>181</span></div>
+                    </a>
+                </div>
+            </div>
+            <div class="ts--result__wrapper">
+                <div class="ts--search__result-title">Виды спорта</div>
+                <div class="ts--search-result-list">
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                        <div class="ts--result__quantity"><span>181</span></div>
+                    </a>
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                        <div class="ts--result__quantity"><span>181</span></div>
+                    </a>
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                        <div class="ts--result__quantity"><span>181</span></div>
+                    </a>
+                </div>
+            </div>
+            <button class="ts--btn_dark ts--btn ts--search__all-results"><span>Показать все результаты</span> <span
+                    class="ts--search__total">348</span></button>
+        </div>
+    </div>
+</div>
+
+
+<div class="ts--search ts--search_short">
+    <!--    Поле поиска-->
+    <div class="ts--search__input-wrapper">
+        <div class="ts--search__icon">
+            <div class="ts--graphic-view">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="11.6729" cy="11.4823" rx="7.48231" ry="7.48231" stroke="#2D2D35" stroke-width="1.5"
+                             stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.876 17.0741L19.8095 20" stroke="#2D2D35" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+        <input id="search-short" type="search" placeholder="Поиск"/>
+        <div class="ts--search__remove">
+            <div class="ts--graphic-view ts--graphic-view_circle ts--graphic-view_with-bg">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.994 5.0057L5.00859 18.9911M18.9985 19L5.00146 5" stroke="#9F9FB0" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="ts--result ts--search__result-wrapper">
+        <!--        предложенные варианты-->
+        <div class="ts--suggestion">
+            <div class="ts--result__wrapper">
+                <div class="ts--search__result-title ts--suggestion__title">Часто ищут</div>
+                <div class="ts--result__list">
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                    </a>
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                    </a>
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--        обёртка результата-->
+        <div class="ts--result">
+            <div class="ts--result__wrapper">
+                <div class="ts--search__result-title">Виды спорта</div>
+                <div class="ts--search-result-list">
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                        <div class="ts--result__quantity"><span>181</span></div>
+                    </a>
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                        <div class="ts--result__quantity"><span>181</span></div>
+                    </a>
+                    <a href class="ts--result__item">
+                        <div class="ts--result__icon ts--graphic-view ts--graphic-view_circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.10051 16.8995L17 7M17 7V17M17 7H7" stroke="#2D2D35" stroke-width="1.5"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="ts--result__text">Конор Макгрегор</span>
+                        <div class="ts--result__quantity"><span>181</span></div>
+                    </a>
+                </div>
+            </div>
+            <button class="ts--btn_dark ts--btn ts--search__all-results"><span>Показать все результаты</span> <span
+                    class="ts--search__total">348</span></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

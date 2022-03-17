@@ -75,8 +75,9 @@
 }
 
 .ts--graphic-view {
-  width: 24px;
-  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &_circle {
     border-radius: 50%;
