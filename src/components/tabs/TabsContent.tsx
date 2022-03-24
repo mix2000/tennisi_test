@@ -3,13 +3,18 @@ import {ITabsContent} from "./Models";
 
 const TabsContent: React.FC<ITabsContent> = ({id, className, isActive, children}) => {
 
-    let itemClassName = className;
+    const tabsContentClasses = ['ts--tabs__content'];
+
+    if (className) {
+        tabsContentClasses.push(className);
+    }
+
     if (isActive) {
-        itemClassName += " active";
+        tabsContentClasses.push('active');
     }
 
     return (
-        <div key={id} className={'ts--tabs__content' + itemClassName}>
+        <div key={id} className={tabsContentClasses.join(' ')}>
             {children}
         </div>
     );

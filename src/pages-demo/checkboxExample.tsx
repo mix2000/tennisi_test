@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {CheckboxItem, CheckboxList} from "../components/checkbox/Checbox";
+import {CheckboxItem, CheckboxList} from "../components/checkbox/Checkbox";
 import {ICheckbox} from "../components/checkbox/Models";
 import {checkboxArr} from "../assets/mocks/checkbox";
 

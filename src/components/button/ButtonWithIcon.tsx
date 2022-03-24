@@ -7,13 +7,14 @@ export const ButtonWithAddedIcon: React.FC<IbuttonWithIcon> =
     ({
          title,
          href,
-         className = "ts--btn",
+         className,
          lightColor,
          darkColor,
          iconRight,
          iconLeft,
          withoutText,
          rounded,
+         brandColor,
          iconType,
          iconSize,
          iconFill,
@@ -21,23 +22,29 @@ export const ButtonWithAddedIcon: React.FC<IbuttonWithIcon> =
          disabled= false}) =>
     {
 
-        let buttonClass = className;
+        const buttonClass = ['ts-btn'];
+
+        if (className) {
+            buttonClass.push(className);
+        }
 
         if (disabled) {
-            buttonClass += ' disabled';
+            buttonClass.push('disabled');
         }
 
         if (lightColor) {
-            buttonClass += ' ts--btn_light'
-        }else if (darkColor) {
-            buttonClass += ' ts--btn_dark'
-        }else{
-            buttonClass += ' ts--btn_darken'
+            buttonClass.push('ts--btn_light')
+        } else if (darkColor) {
+            buttonClass.push('ts--btn_dark')
+        } else if (brandColor) {
+            buttonClass.push('ts--btn_brand')
+        } else {
+            buttonClass.push('ts--btn_darken')
         }
 
         let buttonContent;
         if (iconRight) {
-            buttonClass += ' ts--btn_icon-right'
+            buttonClass.push('ts--btn_icon-right');
 
             buttonContent = <>
                 <span>{title}</span>
@@ -46,7 +53,7 @@ export const ButtonWithAddedIcon: React.FC<IbuttonWithIcon> =
         }
 
         if (iconLeft){
-            buttonClass += ' ts--btn_icon-left'
+            buttonClass.push('ts--btn_icon-left');
 
             buttonContent = <>
                 <NewIcon fill={iconFill} strokeWidth={iconStrokeWidth} height={iconSize} width={iconSize} type={iconType} />
@@ -61,12 +68,12 @@ export const ButtonWithAddedIcon: React.FC<IbuttonWithIcon> =
         }
 
         if (rounded) {
-            buttonClass += ' ts--btn_rounded'
+            buttonClass.push('ts--btn_rounded');
         }
 
         return (
             <>
-                <button className={buttonClass}>
+                <button className={buttonClass.join(' ')}>
                     <a href={href}>
                         {buttonContent}
                     </a>

@@ -1,22 +1,21 @@
-import React from 'react';
+import React from "react";
 import {ITabsGeneral} from "./Models";
 
-const TabsContentWrapper: React.FC<ITabsGeneral> = ({
+export const TabsWrapper: React.FC<ITabsGeneral> = ({
                                                         className,
                                                         children
                                                     }) => {
 
-    const tabsContentWrapperClasses = ['ts--tabs__wrapper'];
+    const tabsWrapperClasses = ['ts--tabs'];
 
     if (className) {
-        tabsContentWrapperClasses.push(className);
+        tabsWrapperClasses.push(className);
     }
 
     return (
-        <div className={tabsContentWrapperClasses.join(' ')}>
+        <div className={tabsWrapperClasses.join(' ')}>
             {children}
         </div>
     );
-};
+}
 
-export default TabsContentWrapper;

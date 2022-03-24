@@ -4,7 +4,10 @@ interface ISearchResultList {
     title: string
 }
 
-const SearchResultList: React.FC<ISearchResultList> = ({title, children}) => {
+const SearchResultList: React.FC<ISearchResultList> = ({
+                                                           title,
+                                                           children
+                                                       }) => {
     return (
         <div className={'ts--result__wrapper'}>
             <div className="ts--search__result-title">{title}</div>

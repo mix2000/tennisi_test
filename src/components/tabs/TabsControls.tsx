@@ -1,15 +1,23 @@
 import React from 'react';
 import {ITabsControls} from "./Models";
 
-const TabsControls: React.FC<ITabsControls> = ({className = '', isBordered, children}) => {
+const TabsControls: React.FC<ITabsControls> = ({
+                                                   className,
+                                                   isBordered,
+                                                   children}) => {
 
-    let currentClass = className
+    const tabsControlsClasses = ['ts--tabs__controls'];
+
+    if (className) {
+        tabsControlsClasses.push(className);
+    }
+
     if (isBordered) {
-        currentClass += ' ts--tabs__controls_bordered';
+        tabsControlsClasses.push('ts--tabs__controls_bordered');
     }
 
     return (
-        <div className={'ts--tabs__controls' + currentClass}>
+        <div className={tabsControlsClasses.join(' ')}>
             {children}
         </div>
     );

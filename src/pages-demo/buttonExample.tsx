@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button} from "../components/button/Button";
-import {ButtonWithAddedIcon} from "../components/button/buttonWithIcon";
-import {ButtonWithAddedText} from "../components/button/buttonWithAddedText";
+import {ButtonWithAddedIcon} from "../components/button/ButtonWithIcon";
+import {ButtonWithAddedText} from "../components/button/ButtonWithAddedText";
 import {EIconName} from "../components/icons/Enums";
 
 const ButtonExample = () => {

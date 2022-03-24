@@ -6,38 +6,45 @@ export const ButtonWithAddedText: React.FC<IbuttonWithAddedText> =
     ({
          title,
          href,
-         className = "ts--btn",
+         className,
          lightColor,
          darkColor,
-         textRight=true,
+         brandColor,
+         textRight = true,
          textValue,
-         disabled= false}) =>
-    {
+         disabled = false
+     }) => {
 
-        let buttonClass = className;
+        const buttonClass = ['ts-btn'];
+
+        if (className) {
+            buttonClass.push(className);
+        }
 
         if (disabled) {
-            buttonClass += ' disabled';
+            buttonClass.push('disabled');
         }
 
         if (lightColor) {
-            buttonClass += ' ts--btn_light'
-        }else if (darkColor) {
-            buttonClass += ' ts--btn_dark'
-        }else{
-            buttonClass += ' ts--btn_darken'
+            buttonClass.push('ts--btn_light')
+        } else if (darkColor) {
+            buttonClass.push('ts--btn_dark')
+        } else if (brandColor) {
+            buttonClass.push('ts--btn_brand')
+        } else {
+            buttonClass.push('ts--btn_darken')
         }
 
         let buttonContent;
         if (textRight) {
-            buttonClass += ' ts--btn_text-right'
+            buttonClass.push('ts--btn_text-right')
 
             buttonContent = <>
                 <span>{title}</span>
                 <span>{textValue}</span>
             </>
-        }else{
-            buttonClass += ' ts--btn_text-left'
+        } else {
+            buttonClass.push('ts--btn_text-left')
 
             buttonContent = <>
                 <span>{textValue}</span>
@@ -47,7 +54,7 @@ export const ButtonWithAddedText: React.FC<IbuttonWithAddedText> =
 
         return (
             <>
-                <button className={buttonClass}>
+                <button className={buttonClass.join(' ')}>
                     <a href={href}>
                         {buttonContent}
                     </a>

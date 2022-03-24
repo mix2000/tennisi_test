@@ -1,4 +1,3 @@
-import {ESwitchButtonClass} from "./Enums";
 
 /**
  * @param {string} value значение элемента
@@ -13,7 +12,7 @@ import {ESwitchButtonClass} from "./Enums";
 export interface ISwitchButton {
     value?: string,
     id: number,
-    className?: ESwitchButtonClass,
+    className?: string,
     name?: string,
     disabled?: boolean,
     checked?: boolean,

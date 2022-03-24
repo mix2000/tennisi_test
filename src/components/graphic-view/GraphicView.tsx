@@ -1,7 +1,13 @@
 import React from 'react';
 import {IGraphicView} from "./Models";
 
-export const GraphicView: React.FC<IGraphicView> = ({className = "", width = 24, height = 24, children}) => {
+export const GraphicView: React.FC<IGraphicView> = ({className, width = 24, height = 24, children}) => {
+
+    const graphicViewClasses = ['ts--graphic-view'];
+
+    if (className) {
+        graphicViewClasses.push(className);
+    }
 
     const stylesVar = {
         width: width + 'px',
@@ -9,7 +15,7 @@ export const GraphicView: React.FC<IGraphicView> = ({className = "", width = 24,
     }
 
     return (
-        <div className={`ts--graphic-view ` + className} style={stylesVar}>
+        <div className={graphicViewClasses.join(' ')} style={stylesVar}>
             {children}
         </div>
 );

@@ -1,15 +1,25 @@
 import React from 'react';
 import {ISearch} from "./Models";
 
-const Search: React.FC<ISearch> = ({className, isShort = false, children}) => {
+const Search: React.FC<ISearch> = ({
+                                       className,
+                                       isShort = false,
+                                       children
+                                   }) => {
 
-    let searchClass = className;
+
+    const searchClasses = ['ts--search'];
+
+    if (className) {
+        searchClasses.push(className);
+    }
+
     if (isShort) {
-        searchClass += ' ts--search_short';
+        searchClasses.push('ts--search_short');
     }
 
     return (
-        <div className={'ts--search' + searchClass}>
+        <div className={searchClasses.join(' ')}>
             {children}
         </div>
     );

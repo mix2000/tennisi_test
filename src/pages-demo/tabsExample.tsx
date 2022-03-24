@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {TabsWrapper} from "../components/tabs/Tabs";
+import {TabsWrapper} from "../components/tabs/TabsWrapper";
 import {TabsItem} from "../components/tabs/TabsItem";
 import TabsControls from "../components/tabs/TabsControls";
 import TabsContentWrapper from "../components/tabs/TabsContentWrapper";

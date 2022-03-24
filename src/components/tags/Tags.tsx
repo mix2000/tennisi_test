@@ -1,39 +1,26 @@
 import React from 'react';
 import {ITags} from "./Models";
 
-interface TagsList {
-    tagsArr: ITags[],
-}
+export const TagItem: React.FC<ITags> = ({
+                                             value,
+                                             id,
+                                             className,
+                                             disabled = false
+                                         }) => {
 
-export const TagItem: React.FC<ITags> = ({value, id, className = 'ts--tag', disabled = false}) => {
+    const tagItemClasses = ['ts--tag'];
 
-    let tagItemClass = className;
+    if (className) {
+        tagItemClasses.push(className);
+    }
+
     if (disabled) {
-        tagItemClass += ' disabled';
+        tagItemClasses.push('disabled');
     }
 
     return (
-        <div key={'tag-key' + id} className={tagItemClass}>
+        <div key={'tag-key' + id} className={tagItemClasses.join(' ')}>
             <span>{value}</span>
         </div>
-);
-}
-
-export const TagsList: React.FC<TagsList> = ({tagsArr}) => {
-
-    return (
-        <>
-            {tagsArr.map((tagItem) => {
-
-                let tagItemClass = tagItem.className;
-                if (tagItem.disabled) {
-                    tagItemClass += ' disabled';
-                }
-
-                return (
-                    <TagItem key={tagItem.id} className={tagItemClass} value={tagItem.value}/>
-                )
-            })}
-        </>
     );
 }
