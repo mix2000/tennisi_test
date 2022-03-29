@@ -99,10 +99,13 @@
   }
 
   &__item {
-    display: flex;
-    align-items: center;
     margin: 0 -20px;
     padding: 8px 20px;
+
+    &-row {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__quantity {
@@ -133,6 +136,12 @@
 }
 
 .ts--suggestion {
+  display: none;
+
+  &_active {
+    display: block;
+  }
+
   &__title {
     margin-bottom: 12px;
   }

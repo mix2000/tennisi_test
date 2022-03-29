@@ -1,5 +1,6 @@
 import React from 'react';
-import {TagItem, TagsList} from "../components/tags/Tags";
+import {TagItem} from "../components/tags/Tags";
+import {TagsList} from "../components/tags/TagsList";
 import {tagsArray} from "../assets/mocks/tags";
 
 const TagsExample = () => {

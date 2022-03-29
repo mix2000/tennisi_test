@@ -1,10 +1,19 @@
 import React from "react";
-import {ITabsItem} from "./Models";
+import {ITabsGeneral} from "./Models";
+
+export interface ITabsItem extends ITabsGeneral {
+    id: number,
+    value: string,
+    isActive?: boolean,
+    index: number,
+    onToggle: (index: number) => void,
+}
 
 export const TabsItem: React.FC<ITabsItem> = ({
                                                   id,
                                                   className,
                                                   value,
+                                                  index,
                                                   isActive,
                                                   onToggle
                                               }) => {
@@ -20,7 +29,7 @@ export const TabsItem: React.FC<ITabsItem> = ({
     }
 
     return (
-        <div onClick={onToggle.bind(null, id)} key={id} className={tabItemClasses.join(' ')}>
+        <div onClick={onToggle.bind(this, index)} key={id} className={tabItemClasses.join(' ')}>
             <span>{value}</span>
         </div>
     );

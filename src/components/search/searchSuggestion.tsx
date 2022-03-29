@@ -1,12 +1,19 @@
 import React from 'react';
 import SearchResultList from "./searchResultList";
-import SearchItem from "./searchItem";
 
-interface ISearchSuggestion {}
+interface ISearchSuggestion {
+    isActive: boolean
+}
 
-const SearchSuggestion: React.FC<ISearchSuggestion> = ({children}) => {
+const SearchSuggestion: React.FC<ISearchSuggestion> = ({isActive, children}) => {
+    const suggestionClasses = ['ts--suggestion'];
+
+    if (isActive) {
+        suggestionClasses.push('ts--suggestion_active');
+    }
+
     return (
-        <div className="ts--suggestion">
+        <div className={suggestionClasses.join(' ')}>
             <SearchResultList title={'Часто ищут'}>
                 {children}
             </SearchResultList>

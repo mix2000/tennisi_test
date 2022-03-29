@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {IChips} from "../components/chips/Models";
-import {ChipsItem, ChipsList} from "../components/chips/Chips";
+import {ChipsItem} from "../components/chips/Chips";
+import {ChipsList} from "../components/chips/ChipsList";
 import {chipsArr} from "../assets/mocks/chips";
 
 const ChipsExample = () => {

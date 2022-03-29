@@ -56,5 +56,11 @@
     margin-top: 24px;
   }
 
-  &__content {}
+  &__content {
+    display: none;
+    
+    &.active {
+      display: block;
+    }
+  }
 }

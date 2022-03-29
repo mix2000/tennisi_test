@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {RadioBoxesList, RadioBoxItem} from "../components/radio/RadioBox";
+import {RadioBoxItem} from "../components/radio/RadioBox";
+import {RadioBoxesList} from "../components/radio/RadioBoxList";
 import {IRadioBox} from "../components/radio/Models";
 import {radioBoxArr} from "../assets/mocks/radio-box";
 

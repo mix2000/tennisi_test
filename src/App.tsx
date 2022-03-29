@@ -17,6 +17,7 @@ import SearchSuggestion from "./components/search/searchSuggestion";
 import SearchItem from "./components/search/searchItem";
 import SearchResultWrapper from "./components/search/searchResultWrapper";
 import SearchResult from "./components/search/searchResult";
+import SearchExample from "./pages-demo/searchExample";
 
 
 const App: React.FC = () => {
@@ -41,17 +42,7 @@ const App: React.FC = () => {
 
             {/*<NewIcon width={32} height={32} type={EIconName.TOP} />*/}
 
-            <Search>
-                <SearchInput />
-                <SearchResultWrapper>
-                    {/*<SearchSuggestion>*/}
-                    {/*    <SearchItem href={'test'} value={'Test'}/>*/}
-                    {/*</SearchSuggestion>*/}
-                    <SearchResult>
-                        <SearchItem quantity={123} href={'test2'} value={'Test2'}/>
-                    </SearchResult>
-                </SearchResultWrapper>
-            </Search>
+            <SearchExample/>
         </div>
     );
 }

@@ -17,13 +17,8 @@ export interface ITabsControls extends ITabsGeneral {
 }
 
 export interface ITabsContent extends ITabsGeneral {
-    id: number,
-    isActive?: boolean
-}
-
-export interface ITabsItem extends ITabsGeneral {
-    id: number,
-    value: string,
+    id?: number,
+    index: number,
     isActive?: boolean,
-    onToggle: (id: number) => void,
+    onChange: (index: number) => void
 }

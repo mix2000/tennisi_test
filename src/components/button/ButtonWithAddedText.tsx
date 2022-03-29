@@ -15,7 +15,7 @@ export const ButtonWithAddedText: React.FC<IbuttonWithAddedText> =
          disabled = false
      }) => {
 
-        const buttonClass = ['ts-btn'];
+        const buttonClass = ['ts--btn'];
 
         if (className) {
             buttonClass.push(className);

@@ -1,7 +1,14 @@
 import React from 'react';
 import {ITabsContent} from "./Models";
 
-const TabsContent: React.FC<ITabsContent> = ({id, className, isActive, children}) => {
+const TabsContent: React.FC<ITabsContent> = ({
+                                                 id,
+                                                 className,
+                                                 isActive,
+                                                 index,
+                                                 onChange,
+                                                 children
+                                             }) => {
 
     const tabsContentClasses = ['ts--tabs__content'];
 
@@ -14,7 +21,7 @@ const TabsContent: React.FC<ITabsContent> = ({id, className, isActive, children}
     }
 
     return (
-        <div key={id} className={tabsContentClasses.join(' ')}>
+        <div onChange={onChange.bind(this, index)} key={id} className={tabsContentClasses.join(' ')}>
             {children}
         </div>
     );

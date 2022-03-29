@@ -22,7 +22,7 @@ export const ButtonWithAddedIcon: React.FC<IbuttonWithIcon> =
          disabled= false}) =>
     {
 
-        const buttonClass = ['ts-btn'];
+        const buttonClass = ['ts--btn'];
 
         if (className) {
             buttonClass.push(className);

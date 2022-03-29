@@ -1,21 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {EIconName} from "../icons/Enums";
 import {NewIcon} from "../icons";
+import SearchRemove from "./searchRemove";
 
 interface ISearchInput {
-    onClick?: () => void,
+    value: string,
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
+    onRemove:(event: React.MouseEvent) => void
 }
 
-const SearchInput: React.FC<ISearchInput> = ({onClick}) => {
+const SearchInput: React.FC<ISearchInput> = ({onChange, onRemove, value}) => {
+
     return (
         <div className={'ts--search__input-wrapper'}>
             <div className={'ts--search__icon'}>
                 <NewIcon width={32} height={32} type={EIconName.SEARCH} />
             </div>
-            <input type="search" placeholder="Поиск"/>
-            <div onClick={onClick} className="ts--search__remove">
-                <NewIcon className={'ts--graphic-view_circle ts--graphic-view_with-bg'} width={16} height={16} type={EIconName.CLOSE} />
-            </div>
+            <input onChange={onChange} type="search" placeholder="Поиск" value={value} />
+            <SearchRemove onRemove={onRemove} />
         </div>
     );
 };
