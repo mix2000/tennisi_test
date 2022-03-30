@@ -1,0 +1,162 @@
+.header {
+  display: flex;
+  //padding: 20px 40px 20px;
+  padding: 0 40px;
+  height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--clr-border);
+
+  &__logo {
+    margin-top: 26px;
+    margin-bottom: 8px;
+  }
+
+  //&__group {
+  //  width: calc(100% - 200px);
+  //  display: flex;
+  //  margin-left: auto;
+  //  //align-items: center;
+  //  justify-content: space-between;
+  //}
+
+  &__notifications {
+    position: relative;
+    cursor: pointer;
+
+    &_new {
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--clr-accent);
+        box-shadow: 0 0 8px #FFD6DD;
+      }
+    }
+
+    svg {
+      width: 24px;
+    }
+  }
+
+  &__settings {
+    cursor: pointer;
+
+    svg {
+      width: 24px;
+    }
+  }
+
+  &__user{
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+      background: transparent;
+      border-radius: 2px 2px 0px 0px;
+      height: 2px;
+      width: 100%;
+    }
+
+    &_active {
+      &::after {
+        background: #E12B4B;
+      }
+    }
+  }
+}
+
+.h-user {
+  display: flex;
+  align-items: center;
+
+  &__name {
+    color: var(--clr-interface-primary-100);
+    margin-right: 8px;
+  }
+
+  &__balance {
+    @include ty-paragraph-large;
+    padding: 1px 0;
+    color: var(--clr-gray);
+
+    span {
+      &:last-of-type {
+        padding-left: 4px;
+      }
+    }
+  }
+
+  &__photo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+    background: #000;
+  }
+}
+
+.header-menu {
+  max-width: 1076px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__item {
+    cursor: pointer;
+    padding: 0 10px;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+
+      span {
+        &::after {
+          bottom: -19px;
+        }
+      }
+    }
+
+    span {
+      display: block;
+      position: relative;
+      color: rgba(159, 159, 176, 1);
+      @include ty-paragraph-large;
+
+      &::after {
+        content: '';
+        background-color: transparent;
+        border-radius: 2px 2px 0 0;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -23px;
+      }
+    }
+
+    &.active {
+      span {
+        color: rgba(45, 45, 53, 1);
+      }
+
+      span {
+        &::after {
+          background-color: var(--clr-brand-primary-100);
+        }
+      }
+    }
+  }
+}

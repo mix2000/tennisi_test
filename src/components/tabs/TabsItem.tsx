@@ -3,7 +3,7 @@ import {ITabsGeneral} from "./Models";
 
 export interface ITabsItem extends ITabsGeneral {
     id: number,
-    value: string,
+    value: string | React.CElement<any, any>,
     isActive?: boolean,
     index: number,
     onToggle: (index: number) => void,
