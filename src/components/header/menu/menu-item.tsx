@@ -3,7 +3,7 @@ import React from 'react';
 export interface IMenuItem {
     className?: string,
     id: number,
-    value: string | React.CElement<any, any>,
+    value: string,
     isActive?: boolean,
     index: number,
     onToggle: (index: number) => void,

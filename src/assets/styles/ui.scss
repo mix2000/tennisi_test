@@ -7,6 +7,7 @@
 
 // Base
 @import "base/margins";
+@import "base/variables";
 @import "base/fonts";
 @import "base/colors";
 @import "base/typography";
@@ -17,7 +18,7 @@
 @import "layout/grid";
 @import "layout/header";
 
-// Components
+// Basic Components
 @import "components/graphic-view";
 @import "components/tags";
 @import "components/checkbox";
@@ -30,8 +31,5 @@
 @import "components/tabs";
 @import "components/search";
 
-.test-h1 {
-  @include mv(46);
-  @include ty-headline-large(bold);
-  color: var(--clr-general-black-100);
-}
+//component notifications
+@import "components/notifications/notifications";

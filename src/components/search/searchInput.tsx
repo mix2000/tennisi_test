@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {EIconName} from "../icons/Enums";
 import {NewIcon} from "../icons";
 import SearchRemove from "./searchRemove";
@@ -14,7 +14,7 @@ const SearchInput: React.FC<ISearchInput> = ({onChange, onRemove, value}) => {
     return (
         <div className={'ts--search__input-wrapper'}>
             <div className={'ts--search__icon'}>
-                <NewIcon width={32} height={32} type={EIconName.SEARCH} />
+                <NewIcon width={24} height={24} type={EIconName.SEARCH} />
             </div>
             <input onChange={onChange} type="search" placeholder="Поиск" value={value} />
             <SearchRemove onRemove={onRemove} />

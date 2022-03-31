@@ -2,23 +2,31 @@ import React from 'react';
 import UserBalance from "./user/user-balance";
 import UserName from "./user/user-name";
 import UserPhoto from "./user/user-photo";
+import UserMenu from "./user/user-menu";
+import ListArrow from "../base/list-arrow";
 
 interface IProps {
-    isActive: boolean
+    isOpened: boolean,
+    onClick: () => void
 }
 
-const HeaderUser: React.FC<IProps> = ({isActive}) => {
-    const headerUserClasses = ['header__user h-user']
+const HeaderUser: React.FC<IProps> = ({isOpened, onClick}) => {
+    const headerUserClasses = ['header__user']
 
-    if (isActive) {
-        headerUserClasses.push('header__user_active');
+    if (isOpened) {
+        headerUserClasses.push('opened');
     }
 
     return (
-        <div className={headerUserClasses.join(' ')}>
-            <UserPhoto/>
-            <UserName name={'Дмитрий К.'}/>
-            <UserBalance balance={42000}/>
+        <div onClick={onClick} className={headerUserClasses.join(' ')}>
+            <div className="h-user">
+                <UserPhoto/>
+                <UserName name={'Иванов И.'}/>
+                <UserBalance balance={42000}/>
+                <ListArrow/>
+            </div>
+
+            <UserMenu/>
         </div>
     );
 };

@@ -87,3 +87,61 @@
   padding-bottom: 6px;
   font-weight: #{$weight};
 }
+
+//without padding
+
+//Accent Large
+@mixin ty-accent-large-no-pad($weight: normal) {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: #{$weight};
+}
+
+//Headline Large
+@mixin ty-headline-large-no-pad($weight: normal) {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: #{$weight};
+}
+
+//Headline Medium
+@mixin ty-headline-medium-no-pad($weight: normal) {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: #{$weight};
+}
+
+//Headline Small
+@mixin ty-headline-small-no-pad($weight: normal) {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: #{$weight};
+}
+
+//Paragraph Large
+@mixin ty-paragraph-large-no-pad($weight: normal) {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: #{$weight};
+}
+
+//Paragraph Medium
+@mixin ty-paragraph-medium-no-pad($weight: normal) {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: #{$weight};
+}
+
+//Paragraph Small
+@mixin ty-paragraph-small-no-pad($weight: normal) {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: #{$weight};
+}
+
+//Paragraph Tiny
+@mixin ty-paragraph-tiny-no-pad($weight: normal) {
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: #{$weight};
+}

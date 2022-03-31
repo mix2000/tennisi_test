@@ -1,0 +1,13 @@
+:root {
+  --transition: all .2s ease-out;
+  --popup-box-shadow: 0px 12px 48px rgba(0, 0, 0, 0.08);
+  --popup-border-radius: 8px;
+
+  //ширина wrapper
+  --right-sidebar-width: 320px;
+  --left-sidebar-width: 320px;
+
+  --wrapper-right-sidebar: calc(100% - var(--right-sidebar-width));
+  --wrapper-left-sidebar: calc(100% - var(--left-sidebar-width));
+  --wrapper-both-sidebars: calc(100% - (var(--right-sidebar-width) + var(--left-sidebar-width)));
+}

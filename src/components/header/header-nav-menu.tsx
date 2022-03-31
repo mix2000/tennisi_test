@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {NewIcon} from "../icons";
 import {EIconName} from "../icons/Enums";
 import MenuItem, {IMenuItem} from "./menu/menu-item";
+import MenuMore from "./menu/menu-more";
 
 const menuItemsInit: IMenuItem[] = [
     {
@@ -67,17 +68,16 @@ const menuItemsInit: IMenuItem[] = [
         index: 8,
         onToggle: index => onchange
     },
-    {
-        id: 123456713,
-        value: <NewIcon width={32} height={32} fill={'#9F9FB0'} type={EIconName.MORE} />,
-        isActive: false,
-        index: 9,
-        onToggle: index => onchange
-    }
 ];
 
+const moreState = {
+    isActive: false
+}
 
 const HeaderNavMenu = () => {
+
+    // смена активности пункта меню
+    const [menuItems, setTabsItems] = useState<IMenuItem[]>(menuItemsInit);
 
     const changeTab = (index: number) => {
         const menuItemsNew: IMenuItem[] = [];
@@ -96,7 +96,12 @@ const HeaderNavMenu = () => {
         setTabsItems(menuItemsNew);
     }
 
-    const [menuItems, setTabsItems] = useState<IMenuItem[]>(menuItemsInit);
+    // more
+    const [changedState, changeStateFunc] = useState(moreState.isActive);
+
+    const onClickHandler = () => {
+        changeStateFunc(!changedState);
+    }
 
     return (
         <ul className={'header-menu'}>
@@ -108,6 +113,8 @@ const HeaderNavMenu = () => {
                 value={menuItem.value}
                 isActive={menuItem.isActive}
                 onToggle={changeTab}/>)}
+
+            <MenuMore isActive={changedState} onClick={onClickHandler}/>
         </ul>
     );
 };

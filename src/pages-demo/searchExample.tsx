@@ -11,6 +11,9 @@ const SearchExample = () => {
     const state = {
         inputValue: '',
         isLoaded: true,
+        resultWrapper: {
+            isLoaded: false,
+        },
         suggestion: {
             isActive: false,
         }
@@ -23,26 +26,36 @@ const SearchExample = () => {
 
     const [suggestionStatus, changeSuggestionStatus] = useState(state.suggestion.isActive);
 
+    const [resultVisibility, changeLoading] = useState(state.resultWrapper.isLoaded);
+
     const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
         changeValue(event.target.value);
-        changeSuggestionStatus(true);
-        changeIsLoaded(false);
 
-        setTimeout(function (){
-            console.log('hello')
+        if (event.target.value !== '') {
+            changeLoading(true);
+            changeSuggestionStatus(true);
+            changeIsLoaded(false);
+
+            setTimeout(function (){
+                changeIsLoaded(true);
+            },1000)
+        }else{
+            changeLoading(false);
+            changeSuggestionStatus(false);
             changeIsLoaded(true);
-        },1000)
+        }
     }
 
     const onRemoveHandler = () => {
         changeValue('');
+        changeLoading(false);
         changeSuggestionStatus(false);
     }
 
     return (
         <Search>
             <SearchInput onChange={onChangeHandler} onRemove={onRemoveHandler} value={newValue}/>
-            <SearchResultWrapper>
+            <SearchResultWrapper isVisible={resultVisibility}>
                 <SearchSuggestion isActive={suggestionStatus}>
                     <SearchItem isLoaded={newIsLoaded} href={'test'} value={'Test'}/>
                 </SearchSuggestion>

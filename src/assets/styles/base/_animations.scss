@@ -1,14 +1,14 @@
 @keyframes skeleton {
   0% {
-    //background: linear-gradient(90deg, #F7F7FF 0%, #F7F7FF 37.5%, #ECECF6 66.15%, #ECECF6 100%);
-    background: var(--clr-brand-primary-100);
+    background: linear-gradient(90deg, #F7F7FF 0%, #F7F7FF 37.5%, #ECECF6 66.15%, #ECECF6 100%);
+    //background: var(--clr-brand-primary-100);
   }
-  50% {
-    //background: linear-gradient(90deg, #ECECF6 0%, #ECECF6 37.5%, #F7F7FF 66.15%, #F7F7FF 100%);
-    background: var(--clr-general-black-100);
-  }
+  //50% {
+  //  //background: linear-gradient(90deg, #ECECF6 0%, #ECECF6 37.5%, #F7F7FF 66.15%, #F7F7FF 100%);
+  //  background: var(--clr-general-black-100);
+  //}
   100% {
-    //background: linear-gradient(90deg, #F7F7FF 0%, #F7F7FF 37.5%, #ECECF6 66.15%, #ECECF6 100%);
-    background: var(--clr-brand-primary-100);
+    background: linear-gradient(90deg, #F7F7FF 0%, #F7F7FF 37.5%, #ECECF6 66.15%, #ECECF6 100%);
+    //background: var(--clr-brand-primary-100);
   }
 }

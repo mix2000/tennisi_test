@@ -8,8 +8,10 @@ import Header from "./components/header/header";
 const App: React.FC = () => {
 
     return (
-        <Header/>
-        // <ComponentsDemo/>
+        <>
+            <Header/>
+            <ComponentsDemo/>
+        </>
     );
 }
 

@@ -1,10 +1,19 @@
 import React from 'react';
 
-interface ISearchResult {}
+interface ISearchResult {
+    isVisible: boolean
+}
 
-const SearchResultWrapper: React.FC<ISearchResult> = ({children}) => {
+const SearchResultWrapper: React.FC<ISearchResult> = ({isVisible, children}) => {
+
+    const classes = ['ts--search__result-wrapper'];
+
+    if (isVisible) {
+        classes.push('active')
+    }
+
     return (
-        <div className={'ts--search__result-wrapper'}>
+        <div className={classes.join(' ')}>
             {children}
         </div>
     );
