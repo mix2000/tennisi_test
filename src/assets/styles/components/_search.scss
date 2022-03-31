@@ -1,4 +1,5 @@
 .ts--search {
+  position: relative;
 
   &__all-results {
     width: 100%;
@@ -59,7 +60,11 @@
 
   &__result-wrapper {
     display: none;
+    position: absolute;
+    left: 0;
+    margin-top: 8px;
     padding: 20px 20px 12px;
+    width: 100%;
     background-color: #FFFFFF;
     box-shadow: 0 12px 48px rgba(0, 0, 0, 0.08);
     border-radius: 8px;

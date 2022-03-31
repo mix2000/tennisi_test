@@ -8,6 +8,7 @@
   box-shadow: var(--popup-box-shadow);
   border-radius: var(--popup-border-radius);
   width: 320px;
+  cursor: default;
 
   &__title {
     @include ty-headline-medium-no-pad(bold);

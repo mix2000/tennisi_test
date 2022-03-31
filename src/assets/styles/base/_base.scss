@@ -64,6 +64,8 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  height: calc(100vh - var(--header-height));
   background: var(--clr-bg-secondary);
   padding-top: 40px;
 }
@@ -72,6 +74,16 @@ body {
   padding: 40px;
   background: var(--clr-bg-primary);
   max-width: var(--wrapper-right-sidebar);
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .container {

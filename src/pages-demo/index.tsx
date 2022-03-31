@@ -12,7 +12,6 @@ import SearchExample from "./searchExample";
 const ComponentsDemo = () => {
     return (
         <div>
-            <div className="container">
                 <TagsExample />
 
                 <ChipsExample />
@@ -27,12 +26,13 @@ const ComponentsDemo = () => {
 
                 <ButtonExample/>
 
-                <TabsExample/>
+                <div className="row">
+                    <TabsExample/>
+                </div>
 
                 {/*<NewIcon width={32} height={32} type={EIconName.TOP} />*/}
 
                 <SearchExample/>
-            </div>
         </div>
     );
 };
