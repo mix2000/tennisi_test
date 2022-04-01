@@ -1,9 +1,9 @@
-import React, {lazy, Suspense} from "react";
+import React, {lazy, Suspense, useMemo} from "react";
 import {IIcons} from "./Models";
 import {GraphicView} from "../graphic-view/GraphicView";
 
 export const NewIcon = ({className, width, height, fill, strokeWidth, type}: IIcons): JSX.Element => {
-    let Child = lazy(() => import(`./items/${type}`));
+    const Child = useMemo(() =>lazy(() => import(`./items/${type}`)), [type]);
 
     return (
             <Suspense fallback={<div>Loading...</div>}>
