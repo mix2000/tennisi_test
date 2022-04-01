@@ -17,5 +17,6 @@ export interface IIcons {
     fill?: string,
     width?: number,
     height?: number,
+    viewBox?: string,
     type?: EIconName
 }

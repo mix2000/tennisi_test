@@ -70,37 +70,6 @@ body {
   padding-top: 40px;
 }
 
-.content {
-  padding: 40px;
-  background: var(--clr-bg-primary);
-  max-width: var(--wrapper-right-sidebar);
-  width: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-  scroll-behavior: smooth;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-.container {
-  max-width: 1230px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.row {
-  display: flex;
-  @include mv(24);
-
-  &>* {
-    margin: 0 6px;
-  }
-}
-
 .skeleton {
   animation: skeleton 2s infinite ease-in;
   border-radius: 4px;

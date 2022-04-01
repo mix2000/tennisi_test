@@ -1,28 +1,28 @@
 .header {
   display: flex;
-  //padding: 20px 40px 20px;
   padding: 0 40px;
   height: 72px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--clr-border);
 
+  @media (max-width: 1480px) {
+    justify-content: center;
+  }
+
   &__logo {
     margin-top: 26px;
     margin-bottom: 8px;
   }
 
-  //&__group {
-  //  width: calc(100% - 200px);
-  //  display: flex;
-  //  margin-left: auto;
-  //  //align-items: center;
-  //  justify-content: space-between;
-  //}
-
   &__notifications {
     position: relative;
     cursor: pointer;
+
+    @media (max-width: 1480px) {
+      margin-right: 16px;
+      margin-left: auto;
+    }
 
     &::after {
       content: '';
@@ -68,6 +68,10 @@
   &__settings {
     cursor: pointer;
 
+    @media (max-width: 1480px) {
+      display: none;
+    }
+
     svg {
       width: 24px;
     }
@@ -78,6 +82,11 @@
     max-width: 240px;
     width: 100%;
     cursor: pointer;
+
+    @media (max-width: 1480px) {
+      max-width: 100%;
+      width: auto;
+    }
 
     &::after {
       content: '';
@@ -139,15 +148,28 @@
   align-items: center;
   padding-right: 20px;
 
+  @media (max-width: 1480px) {
+    padding-right: 0;
+    justify-content: flex-end;
+  }
+
   &__name {
     color: var(--clr-interface-primary-100);
     margin-right: 8px;
+
+    @media (max-width: 1480px) {
+      display: none;
+    }
   }
 
   &__balance {
     @include ty-paragraph-large;
     padding: 1px 0;
     color: var(--clr-gray);
+
+    @media (max-width: 1480px) {
+      display: none;
+    }
 
     span {
       &:last-of-type {
@@ -162,10 +184,18 @@
     border-radius: 50%;
     margin-right: 12px;
     background: #000;
+
+    @media (max-width: 1480px) {
+      margin-right: 0;
+    }
   }
 
   .list-arrow {
     margin-left: auto;
+
+    @media (max-width: 1480px) {
+      display: none;
+    }
   }
 }
 
@@ -175,6 +205,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1480px) {
+    display: none;
+  }
 
   &__item {
     cursor: pointer;
@@ -278,3 +312,24 @@
     }
   }
 }
+
+.header-mobile-menu {
+  display: none;
+  margin-right: auto;
+
+  @media (max-width: 1480px) {
+    display: block;
+  }
+
+  &__burger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+      @include ty-paragraph-large-no-pad;
+      margin-left: 12px;
+    }
+  }
+}
+

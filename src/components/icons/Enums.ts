@@ -31,5 +31,6 @@ export enum EIconName {
     TEXT = 'text',
     THEME = 'theme',
     TIME_CIRCLE = 'time-circle',
-    TOP = 'top'
+    TOP = 'top',
+    BURGER = 'burger'
 }
