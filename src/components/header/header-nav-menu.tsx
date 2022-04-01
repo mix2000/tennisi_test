@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-import {NewIcon} from "../icons";
-import {EIconName} from "../icons/Enums";
 import MenuItem, {IMenuItem} from "./menu/menu-item";
 import MenuMore from "./menu/menu-more";
 
@@ -96,13 +94,6 @@ const HeaderNavMenu = () => {
         setTabsItems(menuItemsNew);
     }
 
-    // more
-    const [changedState, changeStateFunc] = useState(moreState.isActive);
-
-    const onClickHandler = () => {
-        changeStateFunc(!changedState);
-    }
-
     return (
         <ul className={'header-menu'}>
             {menuItems.map((menuItem) => <MenuItem
@@ -114,7 +105,7 @@ const HeaderNavMenu = () => {
                 isActive={menuItem.isActive}
                 onToggle={changeTab}/>)}
 
-            <MenuMore isActive={changedState} onClick={onClickHandler}/>
+            <MenuMore/>
         </ul>
     );
 };
