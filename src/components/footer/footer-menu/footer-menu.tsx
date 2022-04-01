@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import FooterMenuColumn from "./footer-menu-column";
 import {IFooterMenuItem} from "./footer-menu-item";
 
@@ -81,6 +81,7 @@ const menuFour: IFooterMenuItem[] = [
         href: ''
     },
 ]
+
 const FooterMenu = () => {
     return (
         <div className={'footer-menu'}>

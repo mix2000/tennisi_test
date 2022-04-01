@@ -12,3 +12,12 @@
     //background: var(--clr-brand-primary-100);
   }
 }
+
+@keyframes slide-down {
+  0% {
+    height: 0;
+  }
+  100%{
+    height: 100%;
+  }
+}

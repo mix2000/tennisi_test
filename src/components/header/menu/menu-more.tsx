@@ -4,7 +4,6 @@ import {NewIcon} from "../../icons";
 import MenuMoreList from "./menu-more-list";
 import {useOuterClick} from 'react-outer-click';
 
-
 interface IProps {
     isActive: boolean,
     onClick: () => void
@@ -30,7 +29,7 @@ const MenuMore: React.FC<IProps> = ({isActive, onClick}) => {
             <div onClick={onClick} className="menu-more__trigger">
                 <NewIcon width={32} height={32} fill={'#9F9FB0'} type={EIconName.MORE}/>
             </div>
-            <MenuMoreList/>
+            {isActive && <MenuMoreList/>}
         </li>
     );
 };
