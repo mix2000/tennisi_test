@@ -1,6 +1,6 @@
 import React from 'react';
 import FooterMenuItem, {IFooterMenuItem} from "./footer-menu-item";
-import FooterSocials from "./footer-socials";
+import FooterSocials from "../footer-socials/footer-socials";
 
 export interface IMenuColumn {
     title: string,
@@ -38,20 +38,6 @@ const FooterMenuColumn: React.FC<IMenuColumn> = props => {
             </div>
         );
     }
-
-
-    return (
-        <div className={'footer-menu__column'}>
-            <h4>{props.title}</h4>
-            <ul className={'footer-menu__list'}>
-                {props.items.map((menuItem) =>
-                    <FooterMenuItem
-                        href={menuItem.href}
-                        value={menuItem.value}/>
-                )}
-            </ul>
-        </div>
-    );
 };
 
 export default FooterMenuColumn;

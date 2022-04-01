@@ -773,6 +773,13 @@ body {
       font-size: 14px;
       line-height: 20px;
       font-weight: normal; }
+  .footer-socials {
+    display: flex;
+    justify-content: space-between;
+    max-width: 242px; }
+    .footer-socials__item {
+      border-radius: 50%;
+      border: 1px solid var(--clr-border); }
 
 .ts--graphic-view {
   display: flex;

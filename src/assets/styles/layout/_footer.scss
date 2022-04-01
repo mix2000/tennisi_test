@@ -102,4 +102,15 @@
       @include ty-paragraph-medium-no-pad;
     }
   }
+
+  &-socials {
+    display: flex;
+    justify-content: space-between;
+    max-width: 242px;
+
+    &__item {
+      border-radius: 50%;
+      border: 1px solid var(--clr-border);
+    }
+  }
 }
