@@ -4,6 +4,7 @@ import HeaderSettings from "./header-settings";
 import HeaderNotifications from "./header-notifications";
 import HeaderUser from "./header-user";
 import HeaderNavMenu from "./header-nav-menu";
+import HeaderMobileMenu from "./mobile-menu/header-mobile-menu";
 
 const Header = () => {
 
@@ -30,6 +31,7 @@ const Header = () => {
 
     return (
         <div className={'header'}>
+            <HeaderMobileMenu/>
             <HeaderLogo/>
             <HeaderSettings/>
             <HeaderNavMenu/>
