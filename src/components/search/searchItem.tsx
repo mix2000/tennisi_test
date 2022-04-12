@@ -44,5 +44,3 @@ export const SearchItem: React.FC<ISearchItem> = ({
         </a>
     );
 };
-
-export default SearchItem;

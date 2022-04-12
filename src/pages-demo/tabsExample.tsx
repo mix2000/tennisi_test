@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {TabsWrapper} from "../components/tabs/TabsWrapper";
 import {TabsItem} from "../components/tabs/TabsItem";
-import TabsControls from "../components/tabs/TabsControls";
-import TabsContentWrapper from "../components/tabs/TabsContentWrapper";
-import TabsContent from "../components/tabs/TabsContent";
+import {TabsControls} from "../components/tabs/TabsControls";
+import {TabsContentWrapper} from "../components/tabs/TabsContentWrapper";
+import {TabsContent} from "../components/tabs/TabsContent";
 import {ITabsItem} from "../components/tabs/TabsItem";
 
 const tabsItemsInit: ITabsItem[] = [
@@ -12,28 +12,28 @@ const tabsItemsInit: ITabsItem[] = [
         value: 'tab Item 1',
         isActive: true,
         index: 0,
-        onToggle: index => onchange
+        onToggle: () => onchange
     },
     {
         id: 12345,
         value: 'tab Item 2',
         isActive: false,
         index: 1,
-        onToggle: index => onchange
+        onToggle: () => onchange
     },
     {
         id: 123456,
         value: 'tab Item 3',
         isActive: false,
         index: 2,
-        onToggle: index => onchange
+        onToggle: () => onchange
     },
     {
         id: 1234567,
         value: 'tab Item 4',
         isActive: false,
         index: 3,
-        onToggle: index => onchange
+        onToggle: () => onchange
     }
 ];
 

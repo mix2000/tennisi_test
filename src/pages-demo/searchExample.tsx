@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
-import SearchInput from "../components/search/searchInput";
-import SearchResultWrapper from "../components/search/searchResultWrapper";
-import SearchSuggestion from "../components/search/searchSuggestion";
-import SearchItem from "../components/search/searchItem";
-import SearchResult from "../components/search/searchResult";
-import Search from "../components/search/Search";
+import {SearchInput} from "../components/search/searchInput";
+import {SearchResultWrapper} from "../components/search/searchResultWrapper";
+import {SearchSuggestion} from "../components/search/searchSuggestion";
+import {SearchItem} from "../components/search/searchItem";
+import {Search} from "../components/search/Search";
 
 const SearchExample = ():JSX.Element => {
 
