@@ -9,7 +9,7 @@ export interface IMenuItem {
     onToggle: (index: number) => void,
 }
 
-const MenuItem: React.FC<IMenuItem> = ({
+export const MenuItem: React.FC<IMenuItem> = ({
                                            id,
                                            className,
                                            value,
@@ -34,5 +34,3 @@ const MenuItem: React.FC<IMenuItem> = ({
         </li>
     );
 }
-
-export default MenuItem;

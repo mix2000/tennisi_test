@@ -1,7 +1,7 @@
 import React from 'react';
 import {IIcons} from "../Models";
 
-const Logout = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
+export const Logout = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
     return (
         <>
             <path
@@ -14,5 +14,3 @@ const Logout = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element =>
         </>
     );
 };
-
-export default Logout;

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import MenuItem, {IMenuItem} from "./menu/menu-item";
-import MenuMore from "./menu/menu-more";
+import {MenuItem, IMenuItem} from "./menu/menu-item";
+import {MenuMore} from "./menu/menu-more";
 
 const menuItemsInit: IMenuItem[] = [
     {
@@ -68,11 +68,7 @@ const menuItemsInit: IMenuItem[] = [
     },
 ];
 
-const moreState = {
-    isActive: false
-}
-
-const HeaderNavMenu = () => {
+export const HeaderNavMenu = () => {
 
     // смена активности пункта меню
     const [menuItems, setTabsItems] = useState<IMenuItem[]>(menuItemsInit);
@@ -109,5 +105,3 @@ const HeaderNavMenu = () => {
         </ul>
     );
 };
-
-export default HeaderNavMenu;

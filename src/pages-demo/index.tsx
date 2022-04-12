@@ -9,7 +9,7 @@ import ButtonExample from "./buttonExample";
 import TabsExample from "./tabsExample";
 import SearchExample from "./searchExample";
 
-const ComponentsDemo = () => {
+export const ComponentsDemo = () => {
     return (
         <div>
                 <TagsExample />
@@ -30,11 +30,7 @@ const ComponentsDemo = () => {
                     <TabsExample/>
                 </div>
 
-                {/*<NewIcon width={32} height={32} type={EIconName.TOP} />*/}
-
                 <SearchExample/>
         </div>
     );
 };
-
-export default ComponentsDemo;

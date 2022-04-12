@@ -2,7 +2,7 @@ import React from 'react';
 import {NewIcon} from "../../icons";
 import {EIconName} from "../../icons/Enums";
 
-const FooterSocials = () => {
+export const FooterSocials = () => {
     return (
         <div className={'footer-socials'}>
             <div className="footer-socials__item">
@@ -38,5 +38,3 @@ const FooterSocials = () => {
         </div>
     );
 };
-
-export default FooterSocials;

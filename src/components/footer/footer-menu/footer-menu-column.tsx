@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import FooterMenuItem, {IFooterMenuItem} from "./footer-menu-item";
-import FooterSocials from "../footer-socials/footer-socials";
-import ListArrow from "../../base/list-arrow";
+import {FooterMenuItem, IFooterMenuItem} from "./footer-menu-item";
+import {FooterSocials} from "../footer-socials/footer-socials";
+import {ListArrow} from "../../base/list-arrow";
 
 export interface IMenuColumn {
     title: string,
@@ -9,7 +9,7 @@ export interface IMenuColumn {
     withSocials?: boolean,
 }
 
-const FooterMenuColumn: React.FC<IMenuColumn> = props => {
+export const FooterMenuColumn: React.FC<IMenuColumn> = props => {
 
     const classes = ['footer-menu__column'];
 
@@ -44,5 +44,3 @@ const FooterMenuColumn: React.FC<IMenuColumn> = props => {
         </div>
     );
 };
-
-export default FooterMenuColumn;

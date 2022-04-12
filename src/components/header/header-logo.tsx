@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HeaderLogo = () => {
+export const HeaderLogo = () => {
     return (
         <div className={'header__logo'}>
             <a href="/" rel={'nofollow'}>
@@ -28,5 +28,3 @@ const HeaderLogo = () => {
         </div>
     );
 };
-
-export default HeaderLogo;

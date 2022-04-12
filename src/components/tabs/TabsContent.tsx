@@ -1,7 +1,7 @@
 import React from 'react';
 import {ITabsContent} from "./Models";
 
-const TabsContent: React.FC<ITabsContent> = ({
+export const TabsContent: React.FC<ITabsContent> = ({
                                                  id,
                                                  className,
                                                  isActive,
@@ -26,5 +26,3 @@ const TabsContent: React.FC<ITabsContent> = ({
         </div>
     );
 };
-
-export default TabsContent;

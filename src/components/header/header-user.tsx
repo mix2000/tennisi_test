@@ -1,16 +1,16 @@
 import React, {useRef, useState} from 'react';
-import UserBalance from "./user/user-balance";
-import UserName from "./user/user-name";
-import UserPhoto from "./user/user-photo";
-import UserMenu from "./user/user-menu";
-import ListArrow from "../base/list-arrow";
+import {UserBalance} from "./user/user-balance";
+import {UserName} from "./user/user-name";
+import {UserPhoto} from "./user/user-photo";
+import {UserMenu} from "./user/user-menu";
+import {ListArrow} from "../base/list-arrow";
 import {useOuterClick} from 'react-outer-click';
 
 interface IProps {
 
 }
 
-const HeaderUser: React.FC<IProps> = () => {
+export const HeaderUser: React.FC<IProps> = () => {
     const headerUserClasses = ['header__user']
 
     const ref = useRef(null);
@@ -43,5 +43,3 @@ const HeaderUser: React.FC<IProps> = () => {
         </div>
     );
 };
-
-export default HeaderUser;

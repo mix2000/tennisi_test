@@ -4,12 +4,10 @@ interface IProps {
     name: string
 }
 
-const UserName: React.FC<IProps> = ({name}) => {
+export const UserName: React.FC<IProps> = ({name}) => {
     return (
         <div className={'h-user__name'}>
             <span>{name}</span>
         </div>
     );
 };
-
-export default UserName;

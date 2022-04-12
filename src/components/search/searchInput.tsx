@@ -1,7 +1,7 @@
 import React from 'react';
 import {EIconName} from "../icons/Enums";
 import {NewIcon} from "../icons";
-import SearchRemove from "./searchRemove";
+import {SearchRemove} from "./searchRemove";
 
 interface ISearchInput {
     value: string,
@@ -9,7 +9,7 @@ interface ISearchInput {
     onRemove:(event: React.MouseEvent) => void
 }
 
-const SearchInput: React.FC<ISearchInput> = ({onChange, onRemove, value}) => {
+export const SearchInput: React.FC<ISearchInput> = ({onChange, onRemove, value}) => {
 
     return (
         <div className={'ts--search__input-wrapper'}>
@@ -21,5 +21,3 @@ const SearchInput: React.FC<ISearchInput> = ({onChange, onRemove, value}) => {
         </div>
     );
 };
-
-export default SearchInput;

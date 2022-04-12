@@ -1,7 +1,7 @@
 import React from 'react';
 import {IIcons} from "../Models";
 
-const Search = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
+export const Search = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
     return (
         <>
             <ellipse cx="11.6729" cy="11.4823" rx="7.48231" ry="7.48231" stroke={fill} strokeWidth={strokeWidth}
@@ -11,5 +11,3 @@ const Search = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element =>
         </>
     );
 };
-
-export default Search;

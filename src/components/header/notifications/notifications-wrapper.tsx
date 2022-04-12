@@ -1,12 +1,12 @@
 import React from 'react';
-import NotificationsItem from "./notifications-item";
+import {NotificationsItem} from "./notifications-item";
 import {Button} from "../../button/Button";
 
 interface IProps {
     isActive?: boolean,
 }
 
-const Notifications:React.FC<IProps> = () => {
+export const Notifications:React.FC<IProps> = () => {
     return (
         <div className={'notifications'}>
             <div className="notifications__title">Уведомления</div>
@@ -19,5 +19,3 @@ const Notifications:React.FC<IProps> = () => {
         </div>
     );
 };
-
-export default Notifications;

@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuMoreItem, {IMenuMoreItem} from "./menu-more-item";
+import {MenuMoreItem, IMenuMoreItem} from "./menu-more-item";
 
 const menuMoreItemsArr: IMenuMoreItem[] = [
     {
@@ -20,7 +20,7 @@ const menuMoreItemsArr: IMenuMoreItem[] = [
     }
 ]
 
-const MenuMoreList: React.FC = () => {
+export const MenuMoreList: React.FC = () => {
 
     return (
         <ul className={'menu-more-list'}>
@@ -28,5 +28,3 @@ const MenuMoreList: React.FC = () => {
         </ul>
     );
 };
-
-export default MenuMoreList;

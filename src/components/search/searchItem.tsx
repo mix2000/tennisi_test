@@ -1,7 +1,7 @@
 import React from 'react';
 import {EIconName} from "../icons/Enums";
 import {NewIcon} from "../icons";
-import SearchItemQuantity from "./searchItemQuantity";
+import {SearchItemQuantity} from "./searchItemQuantity";
 
 interface ISearchItem {
     id?: number,
@@ -12,7 +12,7 @@ interface ISearchItem {
     quantity?: number | string,
 }
 
-const SearchItem: React.FC<ISearchItem> = ({
+export const SearchItem: React.FC<ISearchItem> = ({
                                                id,
                                                className,
                                                href = "",
@@ -27,15 +27,15 @@ const SearchItem: React.FC<ISearchItem> = ({
         searchItemClasses.push(className);
     }
 
-    let itemRowClass = "ts--result__item-row";
+    let itemRowClass = ['ts--result__item-row'];
 
     if (!isLoaded) {
-        itemRowClass += " skeleton"
+        itemRowClass.push('skeleton');
     }
 
     return (
         <a key={id} href={href} className={searchItemClasses.join(' ')}>
-            <div className={itemRowClass}>
+            <div className={itemRowClass.join(' ')}>
                 <NewIcon className={'ts--graphic-view_circle ts--result__icon'} width={32} height={32}
                          type={EIconName.ARROW}/>
                 <span className="ts--result__text">{value}</span>

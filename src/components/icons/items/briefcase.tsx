@@ -1,7 +1,7 @@
 import React from 'react';
 import {IIcons} from "../Models";
 
-const Briefcase = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
+export const Briefcase = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
     return (
         <>
             <path d="M12.0002 15.6908V13.7435" stroke={fill} strokeWidth={strokeWidth} strokeLinecap="round"
@@ -18,5 +18,3 @@ const Briefcase = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element
         </>
     );
 };
-
-export default Briefcase;

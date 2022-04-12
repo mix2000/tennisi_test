@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FooterCopyright = () => {
+export const FooterCopyright = () => {
     return (
         <div className={'footer-copyright'}>
             <div className="footer-copyright__text">
@@ -17,5 +17,3 @@ const FooterCopyright = () => {
         </div>
     );
 };
-
-export default FooterCopyright;

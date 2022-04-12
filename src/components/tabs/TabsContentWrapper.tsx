@@ -1,7 +1,7 @@
 import React from 'react';
 import {ITabsGeneral} from "./Models";
 
-const TabsContentWrapper: React.FC<ITabsGeneral> = ({
+export const TabsContentWrapper: React.FC<ITabsGeneral> = ({
                                                         className,
                                                         children
                                                     }) => {
@@ -18,5 +18,3 @@ const TabsContentWrapper: React.FC<ITabsGeneral> = ({
         </div>
     );
 };
-
-export default TabsContentWrapper;

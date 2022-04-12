@@ -5,7 +5,7 @@ export interface IFooterMenuItem {
     value: string
 }
 
-const FooterMenuItem: React.FC<IFooterMenuItem> = ({
+export const FooterMenuItem: React.FC<IFooterMenuItem> = ({
                                                        href,
                                                        value
                                                    }) => {
@@ -17,5 +17,3 @@ const FooterMenuItem: React.FC<IFooterMenuItem> = ({
         </li>
     );
 };
-
-export default FooterMenuItem;

@@ -4,7 +4,7 @@ interface ISearchResultList {
     title: string
 }
 
-const SearchResultList: React.FC<ISearchResultList> = ({
+export const SearchResultList: React.FC<ISearchResultList> = ({
                                                            title,
                                                            children
                                                        }) => {
@@ -17,5 +17,3 @@ const SearchResultList: React.FC<ISearchResultList> = ({
         </div>
     );
 };
-
-export default SearchResultList;

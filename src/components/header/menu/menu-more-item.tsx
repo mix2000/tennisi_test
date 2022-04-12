@@ -5,7 +5,7 @@ export interface IMenuMoreItem {
     title: string
 }
 
-const MenuMoreItem:React.FC<IMenuMoreItem> = ({href, title}) => {
+export const MenuMoreItem:React.FC<IMenuMoreItem> = ({href, title}) => {
     return (
         <li className={'menu-more-list__item'}>
             <a href={href}>
@@ -14,5 +14,3 @@ const MenuMoreItem:React.FC<IMenuMoreItem> = ({href, title}) => {
         </li>
     );
 };
-
-export default MenuMoreItem;

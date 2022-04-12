@@ -4,12 +4,10 @@ interface IProps {
     photoUrl: string
 }
 
-const UserPhoto = () => {
+export const UserPhoto = () => {
     return (
         <div className={'h-user__photo'}>
             {/*<img src="" alt=""/>*/}
         </div>
     );
 };
-
-export default UserPhoto;

@@ -8,6 +8,7 @@ import {EIconName} from "./Enums";
  * @param {string} fill цвет заполнения svg
  * @param {number} width ширина graphic view (родительского блока - контейнера)
  * @param {number} height ширина graphic view (родительского блока - контейнера)
+ * @param {string} viewBox параметр viewBox
  * @param {string} type тип svg иконки
  */
 

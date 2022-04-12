@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FooterPartners = () => {
+export const FooterPartners = () => {
     return (
         <div className={'footer-partners'}>
             <h4>Наши партнёры</h4>
@@ -17,5 +17,3 @@ const FooterPartners = () => {
         </div>
     );
 };
-
-export default FooterPartners;

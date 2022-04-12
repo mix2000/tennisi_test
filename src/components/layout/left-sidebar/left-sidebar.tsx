@@ -1,11 +1,9 @@
 import React from 'react';
 
-const LeftSidebar = () => {
+export const LeftSidebar = () => {
     return (
         <div className={'left-sidebar'}>
 
         </div>
     );
 };
-
-export default LeftSidebar;

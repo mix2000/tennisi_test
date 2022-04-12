@@ -6,7 +6,7 @@ interface IProps {
     value: string | number
 }
 
-const NotificationsItem: React.FC<IProps> = ({
+export const NotificationsItem: React.FC<IProps> = ({
                                                  date,
                                                  operation,
                                                  value
@@ -22,5 +22,3 @@ const NotificationsItem: React.FC<IProps> = ({
         </div>
     );
 };
-
-export default NotificationsItem;

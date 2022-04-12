@@ -2,8 +2,7 @@ import React from 'react';
 import {NewIcon} from "../../icons";
 import {EIconName} from "../../icons/Enums";
 
-
-const UserMenu = () => {
+export const UserMenu = () => {
     return (
         <ul className={'user-menu'}>
             <li>
@@ -33,5 +32,3 @@ const UserMenu = () => {
         </ul>
     );
 };
-
-export default UserMenu;

@@ -1,11 +1,11 @@
 import React from 'react';
-import SearchResultList from "./searchResultList";
+import {SearchResultList} from "./searchResultList";
 
 interface ISearchSuggestion {
     isActive: boolean
 }
 
-const SearchSuggestion: React.FC<ISearchSuggestion> = ({isActive, children}) => {
+export const SearchSuggestion: React.FC<ISearchSuggestion> = ({isActive, children}) => {
     const suggestionClasses = ['ts--suggestion'];
 
     if (isActive) {
@@ -20,5 +20,3 @@ const SearchSuggestion: React.FC<ISearchSuggestion> = ({isActive, children}) => 
         </div>
     );
 };
-
-export default SearchSuggestion;

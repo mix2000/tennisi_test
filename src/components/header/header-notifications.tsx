@@ -1,14 +1,14 @@
 import React, {useRef, useState} from 'react';
 import {EIconName} from "../icons/Enums";
 import {NewIcon} from "../icons";
-import Notifications from "./notifications/notifications-wrapper";
+import {Notifications} from "./notifications/notifications-wrapper";
 import {useOuterClick} from 'react-outer-click';
 
 interface INotifications {
     hasNew: boolean,
 }
 
-const HeaderNotifications:React.FC<INotifications> = ({hasNew}) => {
+export const HeaderNotifications:React.FC<INotifications> = ({hasNew}) => {
 
     const ref = useRef(null);
 
@@ -41,5 +41,3 @@ const HeaderNotifications:React.FC<INotifications> = ({hasNew}) => {
         </div>
     );
 };
-
-export default HeaderNotifications;

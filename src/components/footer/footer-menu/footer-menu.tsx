@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import FooterMenuColumn from "./footer-menu-column";
+import React from 'react';
+import {FooterMenuColumn} from "./footer-menu-column";
 import {IFooterMenuItem} from "./footer-menu-item";
 
 const menuOne: IFooterMenuItem[] = [
@@ -82,7 +82,7 @@ const menuFour: IFooterMenuItem[] = [
     },
 ]
 
-const FooterMenu = () => {
+export const FooterMenu = () => {
     return (
         <div className={'footer-menu'}>
             <FooterMenuColumn items={menuOne} title={'Помощь'}/>
@@ -92,5 +92,3 @@ const FooterMenu = () => {
         </div>
     );
 };
-
-export default FooterMenu;

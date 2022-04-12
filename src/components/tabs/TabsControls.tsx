@@ -1,7 +1,7 @@
 import React from 'react';
 import {ITabsControls} from "./Models";
 
-const TabsControls: React.FC<ITabsControls> = ({
+export const TabsControls: React.FC<ITabsControls> = ({
                                                    className,
                                                    isBordered,
                                                    children}) => {
@@ -22,5 +22,3 @@ const TabsControls: React.FC<ITabsControls> = ({
         </div>
     );
 };
-
-export default TabsControls;

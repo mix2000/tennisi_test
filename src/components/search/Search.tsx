@@ -1,7 +1,7 @@
 import React from 'react';
 import {ISearch} from "./Models";
 
-const Search: React.FC<ISearch> = ({
+export const Search: React.FC<ISearch> = ({
                                        className,
                                        isShort = false,
                                        children
@@ -24,5 +24,3 @@ const Search: React.FC<ISearch> = ({
         </div>
     );
 };
-
-export default Search;

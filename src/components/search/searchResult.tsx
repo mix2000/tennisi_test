@@ -1,9 +1,9 @@
 import React from 'react';
-import SearchResultList from "./searchResultList";
+import {SearchResultList} from "./searchResultList";
 
 interface ISearchResult {}
 
-const SearchResult: React.FC<ISearchResult> = ({children}) => {
+export const SearchResult: React.FC<ISearchResult> = ({children}) => {
     return (
         <div className={'ts--result'}>
                 <SearchResultList title={'Test'}>
@@ -12,5 +12,3 @@ const SearchResult: React.FC<ISearchResult> = ({children}) => {
         </div>
     );
 };
-
-export default SearchResult;

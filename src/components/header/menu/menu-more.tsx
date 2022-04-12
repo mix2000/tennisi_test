@@ -1,15 +1,10 @@
 import React, {useRef, useState} from 'react';
 import {EIconName} from "../../icons/Enums";
 import {NewIcon} from "../../icons";
-import MenuMoreList from "./menu-more-list";
+import {MenuMoreList} from "./menu-more-list";
 import {useOuterClick} from 'react-outer-click';
 
-interface IProps {
-    // isActive: boolean,
-    // onClick: () => void
-}
-
-const MenuMore: React.FC<IProps> = () => {
+export const MenuMore: React.FC = () => {
     const ref = useRef(null);
 
     const [openedState, changeOpened] = useState(false);
@@ -39,5 +34,3 @@ const MenuMore: React.FC<IProps> = () => {
         </li>
     );
 };
-
-export default MenuMore;

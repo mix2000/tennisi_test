@@ -1,7 +1,7 @@
 import React from 'react';
 import {IIcons} from "../Models";
 
-const Instagram = ({fill = '#2D2D35'}: IIcons): JSX.Element => {
+export const Instagram = ({fill = '#2D2D35'}: IIcons): JSX.Element => {
     return (
         <>
             <path fillRule="evenodd" clipRule="evenodd" d="M11.9973 8.28043C9.94601 8.28043 8.27981 9.9443 8.27981 11.999C8.27981 14.0536 9.94601 15.7175 11.9973 15.7175C14.0488 15.7175 15.7148 14.0508 15.7148 11.999C15.7148 9.9471 14.0488 8.28043 11.9973 8.28043ZM11.9973 13.9956C10.8948 13.9956 10.0014 13.102 10.0014 11.999C10.0014 10.896 10.8948 10.0023 11.9973 10.0023C13.0998 10.0023 13.9933 10.896 13.9933 11.999C13.9933 13.102 13.0998 13.9956 11.9973 13.9956Z" fill={fill}/>
@@ -10,5 +10,3 @@ const Instagram = ({fill = '#2D2D35'}: IIcons): JSX.Element => {
         </>
     );
 };
-
-export default Instagram;

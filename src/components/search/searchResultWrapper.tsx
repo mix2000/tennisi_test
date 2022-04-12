@@ -4,7 +4,7 @@ interface ISearchResult {
     isVisible: boolean
 }
 
-const SearchResultWrapper: React.FC<ISearchResult> = ({isVisible, children}) => {
+export const SearchResultWrapper: React.FC<ISearchResult> = ({isVisible, children}) => {
 
     const classes = ['ts--search__result-wrapper'];
 
@@ -18,5 +18,3 @@ const SearchResultWrapper: React.FC<ISearchResult> = ({isVisible, children}) => 
         </div>
     );
 };
-
-export default SearchResultWrapper;
