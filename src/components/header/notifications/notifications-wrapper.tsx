@@ -6,7 +6,7 @@ interface IProps {
     isActive?: boolean,
 }
 
-export const Notifications:React.FC<IProps> = () => {
+export const Notifications:React.FC<IProps> = ():JSX.Element => {
     return (
         <div className={'notifications'}>
             <div className="notifications__title">Уведомления</div>

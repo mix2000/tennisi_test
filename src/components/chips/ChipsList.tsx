@@ -7,7 +7,7 @@ interface IChipsList {
     onToggle: (id: number) => void,
 }
 
-export const ChipsList: React.FC<IChipsList> = ({chipsArr, onToggle}) => {
+export const ChipsList: React.FC<IChipsList> = ({chipsArr, onToggle}):JSX.Element => {
 
     return (
         <>

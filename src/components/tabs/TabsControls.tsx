@@ -4,7 +4,7 @@ import {ITabsControls} from "./Models";
 export const TabsControls: React.FC<ITabsControls> = ({
                                                    className,
                                                    isBordered,
-                                                   children}) => {
+                                                   children}):JSX.Element => {
 
     const tabsControlsClasses = ['ts--tabs__controls'];
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const FooterPartners = () => {
+export const FooterPartners = ():JSX.Element => {
     return (
         <div className={'footer-partners'}>
             <h4>Наши партнёры</h4>

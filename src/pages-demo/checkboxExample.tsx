@@ -4,7 +4,7 @@ import {CheckboxList} from "../components/checkbox/CheckboxList";
 import {ICheckbox} from "../components/checkbox/Models";
 import {checkboxArr} from "../assets/mocks/checkbox";
 
-const CheckboxExample = () => {
+const CheckboxExample = ():JSX.Element => {
 
     // функционал checked для кастомных чекбоксов
     const [isCheckedTwo, setIsCheckedTwo] = useState(false);

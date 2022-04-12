@@ -5,7 +5,7 @@ export const Search: React.FC<ISearch> = ({
                                        className,
                                        isShort = false,
                                        children
-                                   }) => {
+                                   }):JSX.Element => {
 
 
     const searchClasses = ['ts--search'];

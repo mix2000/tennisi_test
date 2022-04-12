@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {SwitchButton} from "../components/switch-button/SwitchButton";
 
-const SwitchButtonExample = () => {
+const SwitchButtonExample = ():JSX.Element => {
 
     // функционал checked для кастомных switchButton
     const [isCheckedFive, setIsCheckedFive] = useState(false);

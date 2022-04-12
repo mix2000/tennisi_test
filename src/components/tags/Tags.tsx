@@ -6,7 +6,7 @@ export const TagItem: React.FC<ITags> = ({
                                              id,
                                              className,
                                              disabled = false
-                                         }) => {
+                                         }):JSX.Element => {
 
     const tagItemClasses = ['ts--tag'];
 

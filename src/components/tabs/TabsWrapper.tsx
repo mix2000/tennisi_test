@@ -4,7 +4,7 @@ import {ITabsGeneral} from "./Models";
 export const TabsWrapper: React.FC<ITabsGeneral> = ({
                                                         className,
                                                         children
-                                                    }) => {
+                                                    }):JSX.Element => {
 
     const tabsWrapperClasses = ['ts--tabs'];
 

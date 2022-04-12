@@ -4,7 +4,7 @@ import {ButtonWithAddedIcon} from "../components/button/ButtonWithIcon";
 import {ButtonWithAddedText} from "../components/button/ButtonWithAddedText";
 import {EIconName} from "../components/icons/Enums";
 
-const ButtonExample = () => {
+const ButtonExample = ():JSX.Element => {
     return (
         <>
             <div className="row">

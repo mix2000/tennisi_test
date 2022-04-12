@@ -13,7 +13,7 @@ export const RadioItem: React.FC<IRadioItemType> = ({
                                                         disabled = false,
                                                         checked = false,
                                                         onToggle
-                                                    }) => {
+                                                    }):JSX.Element => {
 
     const radioItemClasses = ['ts--radio'];
 

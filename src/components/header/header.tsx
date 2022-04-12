@@ -6,7 +6,7 @@ import {HeaderUser} from "./header-user";
 import {HeaderNavMenu} from "./header-nav-menu";
 import {HeaderMobileMenu} from "./mobile-menu/header-mobile-menu";
 
-export const Header = () => {
+export const Header = ():JSX.Element => {
 
     return (
         <div className={'header'}>

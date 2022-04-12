@@ -10,7 +10,7 @@ export const NotificationsItem: React.FC<IProps> = ({
                                                  date,
                                                  operation,
                                                  value
-                                             }) => {
+                                             }):JSX.Element => {
 
     return (
         <div className={'notifications__item notification-item'}>

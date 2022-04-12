@@ -4,7 +4,7 @@ import {FooterPartners} from "./footer-partners/footer-partners";
 import {FooterPayments} from "./footer-payments/footer-payments";
 import {FooterCopyright} from "./footer-copyright";
 
-export const Footer = () => {
+export const Footer = ():JSX.Element => {
     return (
         <div className={'footer'}>
             <FooterMenu/>

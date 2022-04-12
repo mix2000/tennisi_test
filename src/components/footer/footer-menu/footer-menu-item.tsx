@@ -8,7 +8,7 @@ export interface IFooterMenuItem {
 export const FooterMenuItem: React.FC<IFooterMenuItem> = ({
                                                        href,
                                                        value
-                                                   }) => {
+                                                   }):JSX.Element => {
     return (
         <li className={'footer-menu__item'}>
             <a href={href}>

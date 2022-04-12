@@ -4,7 +4,7 @@ import {ChipsItem} from "../components/chips/Chips";
 import {ChipsList} from "../components/chips/ChipsList";
 import {chipsArr} from "../assets/mocks/chips";
 
-const ChipsExample = () => {
+const ChipsExample = ():JSX.Element => {
 
     // функционал checked для кастомных чипсов
     const [isChecked, setIsChecked] = useState(false);

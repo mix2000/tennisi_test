@@ -20,7 +20,7 @@ const menuMoreItemsArr: IMenuMoreItem[] = [
     }
 ]
 
-export const MenuMoreList: React.FC = () => {
+export const MenuMoreList: React.FC = ():JSX.Element => {
 
     return (
         <ul className={'menu-more-list'}>

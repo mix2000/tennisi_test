@@ -16,7 +16,7 @@ export const SwitchButton: React.FC<ISwitchButtonsItem> =
             checked = false,
             labelValue,
             onToggle
-        }) => {
+        }):JSX.Element => {
 
 
         const switchButtonItemClasses = ['ts--switch-button'];

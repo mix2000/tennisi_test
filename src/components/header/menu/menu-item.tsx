@@ -16,7 +16,7 @@ export const MenuItem: React.FC<IMenuItem> = ({
                                            index,
                                            isActive,
                                            onToggle
-                                       }) => {
+                                       }):JSX.Element => {
 
     const menuItemClasses = ['header-menu__item'];
 

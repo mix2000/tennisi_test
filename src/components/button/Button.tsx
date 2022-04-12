@@ -11,7 +11,7 @@ export const Button: React.FC<Ibutton> =
          darkColor,
          brandColor,
          disabled = false
-     }) => {
+     }):JSX.Element => {
 
         const buttonClass = ['ts--btn'];
 

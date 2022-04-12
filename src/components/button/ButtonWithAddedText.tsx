@@ -13,7 +13,7 @@ export const ButtonWithAddedText: React.FC<IbuttonWithAddedText> =
          textRight = true,
          textValue,
          disabled = false
-     }) => {
+     }):JSX.Element => {
 
         const buttonClass = ['ts--btn'];
 

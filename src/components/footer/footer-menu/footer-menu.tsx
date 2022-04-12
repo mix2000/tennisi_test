@@ -82,7 +82,7 @@ const menuFour: IFooterMenuItem[] = [
     },
 ]
 
-export const FooterMenu = () => {
+export const FooterMenu = ():JSX.Element => {
     return (
         <div className={'footer-menu'}>
             <FooterMenuColumn items={menuOne} title={'Помощь'}/>

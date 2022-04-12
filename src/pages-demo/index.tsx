@@ -9,7 +9,7 @@ import ButtonExample from "./buttonExample";
 import TabsExample from "./tabsExample";
 import SearchExample from "./searchExample";
 
-export const ComponentsDemo = () => {
+export const ComponentsDemo = ():JSX.Element => {
     return (
         <div>
                 <TagsExample />

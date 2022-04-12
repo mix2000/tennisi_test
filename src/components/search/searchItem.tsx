@@ -19,7 +19,7 @@ export const SearchItem: React.FC<ISearchItem> = ({
                                                value,
                                                isLoaded,
                                                quantity
-                                           }) => {
+                                           }):JSX.Element => {
 
     const searchItemClasses = ['ts--result__item'];
 

@@ -5,7 +5,7 @@ interface IRadioBoxItem extends IRadioBox {
     onToggle: (id: number) => void,
 }
 
-export const RadioBoxItem: React.FC<IRadioBoxItem> = ({value, title, id, className = "", name, disabled= false, checked = false, onToggle}) => {
+export const RadioBoxItem: React.FC<IRadioBoxItem> = ({value, title, id, className = "", name, disabled= false, checked = false, onToggle}):JSX.Element => {
 
     const radioBoxItemClasses = ['ts--radio-box'];
 

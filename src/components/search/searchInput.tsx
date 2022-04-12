@@ -9,7 +9,7 @@ interface ISearchInput {
     onRemove:(event: React.MouseEvent) => void
 }
 
-export const SearchInput: React.FC<ISearchInput> = ({onChange, onRemove, value}) => {
+export const SearchInput: React.FC<ISearchInput> = ({onChange, onRemove, value}):JSX.Element => {
 
     return (
         <div className={'ts--search__input-wrapper'}>

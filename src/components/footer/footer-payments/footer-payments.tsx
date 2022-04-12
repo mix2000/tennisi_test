@@ -8,7 +8,7 @@ import { ReactComponent as WebMoneySVG } from '../../../assets/imgs/footer-payme
 import { ReactComponent as QiwiSVG } from '../../../assets/imgs/footer-payments/qiwi.svg';
 import { ReactComponent as AlfaBankSVG } from '../../../assets/imgs/footer-payments/alfa-bank.svg';
 
-export const FooterPayments = () => {
+export const FooterPayments = ():JSX.Element => {
     return (
         <div className={'footer-payments'}>
             <h4>Способы оплаты</h4>

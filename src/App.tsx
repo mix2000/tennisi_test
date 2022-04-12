@@ -8,7 +8,7 @@ import {LeftSidebar} from "./components/layout/left-sidebar/left-sidebar";
 import {Footer} from "./components/footer/footer";
 
 
-const App: React.FC = () => {
+const App: React.FC = ():JSX.Element => {
 
     return (
         <>

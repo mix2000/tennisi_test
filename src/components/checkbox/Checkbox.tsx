@@ -5,7 +5,7 @@ interface ICheckboxItem extends ICheckbox {
     onToggle: (id: number) => void,
 }
 
-export const CheckboxItem: React.FC<ICheckboxItem> = ({value, id, className, name, checked= false, disabled = false, onToggle}) => {
+export const CheckboxItem: React.FC<ICheckboxItem> = ({value, id, className, name, checked= false, disabled = false, onToggle}):JSX.Element => {
 
     const checkboxClasses = ['ts-checkbox'];
 

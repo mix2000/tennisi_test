@@ -4,7 +4,7 @@ import {RadioBoxesList} from "../components/radio/RadioBoxList";
 import {IRadioBox} from "../components/radio/Models";
 import {radioBoxArr} from "../assets/mocks/radio-box";
 
-const RadioBoxExample = () => {
+const RadioBoxExample = ():JSX.Element => {
 
     // состояния radioBox
     const [radioBoxes, setRadioBoxes] = useState<IRadioBox[]>(radioBoxArr);

@@ -5,7 +5,7 @@ export interface IMenuMoreItem {
     title: string
 }
 
-export const MenuMoreItem:React.FC<IMenuMoreItem> = ({href, title}) => {
+export const MenuMoreItem:React.FC<IMenuMoreItem> = ({href, title}):JSX.Element => {
     return (
         <li className={'menu-more-list__item'}>
             <a href={href}>

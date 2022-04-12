@@ -7,7 +7,7 @@ interface ICheckboxList {
     onToggle: (id: number) => void,
 }
 
-export const CheckboxList: React.FC<ICheckboxList> = ({checkboxes, onToggle}) => {
+export const CheckboxList: React.FC<ICheckboxList> = ({checkboxes, onToggle}):JSX.Element => {
 
     return (
         <>

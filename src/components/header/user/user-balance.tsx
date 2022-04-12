@@ -5,7 +5,7 @@ interface IProps {
     symbol?: string
 }
 
-export const UserBalance:React.FC<IProps> = ({balance, symbol = '₽'}) => {
+export const UserBalance:React.FC<IProps> = ({balance, symbol = '₽'}):JSX.Element => {
 
       const result = balance.toLocaleString().replace(',', ' ') ;
 

@@ -5,7 +5,7 @@ interface ISearchSuggestion {
     isActive: boolean
 }
 
-export const SearchSuggestion: React.FC<ISearchSuggestion> = ({isActive, children}) => {
+export const SearchSuggestion: React.FC<ISearchSuggestion> = ({isActive, children}):JSX.Element => {
     const suggestionClasses = ['ts--suggestion'];
 
     if (isActive) {

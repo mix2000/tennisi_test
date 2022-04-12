@@ -10,7 +10,7 @@ interface IProps {
 
 }
 
-export const HeaderUser: React.FC<IProps> = () => {
+export const HeaderUser: React.FC<IProps> = ():JSX.Element => {
     const headerUserClasses = ['header__user']
 
     const ref = useRef(null);

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const HeaderLogo = () => {
+export const HeaderLogo = ():JSX.Element => {
     return (
         <div className={'header__logo'}>
             <a href="/" rel={'nofollow'}>

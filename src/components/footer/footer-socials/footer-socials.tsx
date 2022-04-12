@@ -2,7 +2,7 @@ import React from 'react';
 import {NewIcon} from "../../icons";
 import {EIconName} from "../../icons/Enums";
 
-export const FooterSocials = () => {
+export const FooterSocials = ():JSX.Element => {
     return (
         <div className={'footer-socials'}>
             <div className="footer-socials__item">

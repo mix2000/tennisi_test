@@ -16,7 +16,7 @@ export const TabsItem: React.FC<ITabsItem> = ({
                                                   index,
                                                   isActive,
                                                   onToggle
-                                              }) => {
+                                              }):JSX.Element => {
 
     const tabItemClasses = ['ts--tabs__item'];
 

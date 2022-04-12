@@ -5,7 +5,7 @@ interface IChipsItem extends IChips {
     onToggle: (id: number) => void,
 }
 
-export const ChipsItem: React.FC<IChipsItem> = ({value, id, className, name, checked= false, disabled = false, onToggle}) => {
+export const ChipsItem: React.FC<IChipsItem> = ({value, id, className, name, checked= false, disabled = false, onToggle}):JSX.Element => {
 
     const ChipsItemClasses = ['ts--chips-item'];
 

@@ -4,7 +4,7 @@ import {RadioList} from "../components/radio/RadioList";
 import {IRadio} from "../components/radio/Models";
 import {radioArr} from "../assets/mocks/radio";
 
-const RadioExample = () => {
+const RadioExample = ():JSX.Element => {
 
     // функционал checked для кастомных radio
     const [isCheckedThree, setIsCheckedThree] = useState(false);

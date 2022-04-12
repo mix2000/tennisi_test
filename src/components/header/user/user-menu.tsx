@@ -2,7 +2,7 @@ import React from 'react';
 import {NewIcon} from "../../icons";
 import {EIconName} from "../../icons/Enums";
 
-export const UserMenu = () => {
+export const UserMenu = ():JSX.Element => {
     return (
         <ul className={'user-menu'}>
             <li>

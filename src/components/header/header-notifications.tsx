@@ -8,7 +8,7 @@ interface INotifications {
     hasNew: boolean,
 }
 
-export const HeaderNotifications:React.FC<INotifications> = ({hasNew}) => {
+export const HeaderNotifications:React.FC<INotifications> = ({hasNew}):JSX.Element => {
 
     const ref = useRef(null);
 

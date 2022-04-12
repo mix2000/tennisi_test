@@ -68,7 +68,7 @@ const menuItemsInit: IMenuItem[] = [
     },
 ];
 
-export const HeaderNavMenu = () => {
+export const HeaderNavMenu = ():JSX.Element => {
 
     // смена активности пункта меню
     const [menuItems, setTabsItems] = useState<IMenuItem[]>(menuItemsInit);

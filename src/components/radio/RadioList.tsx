@@ -7,7 +7,7 @@ interface IRadioList {
     onToggle: (id: number) => void,
 }
 
-export const RadioList: React.FC<IRadioList> = ({radios, onToggle}) => {
+export const RadioList: React.FC<IRadioList> = ({radios, onToggle}):JSX.Element => {
 
     return (
         <>

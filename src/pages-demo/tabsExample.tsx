@@ -37,7 +37,7 @@ const tabsItemsInit: ITabsItem[] = [
     }
 ];
 
-const TabsExample = () => {
+const TabsExample = ():JSX.Element => {
 
     const changeTab = (index: number) => {
         const tabsItemsNew: ITabsItem[] = [];

@@ -6,7 +6,7 @@ interface TagsList {
     tagsArr: ITags[],
 }
 
-export const TagsList: React.FC<TagsList> = ({tagsArr}) => {
+export const TagsList: React.FC<TagsList> = ({tagsArr}):JSX.Element => {
 
     return (
         <>

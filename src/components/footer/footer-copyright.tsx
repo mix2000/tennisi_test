@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const FooterCopyright = () => {
+export const FooterCopyright = ():JSX.Element => {
     return (
         <div className={'footer-copyright'}>
             <div className="footer-copyright__text">

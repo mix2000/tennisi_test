@@ -6,7 +6,7 @@ import SearchItem from "../components/search/searchItem";
 import SearchResult from "../components/search/searchResult";
 import Search from "../components/search/Search";
 
-const SearchExample = () => {
+const SearchExample = ():JSX.Element => {
 
     const state = {
         inputValue: '',

@@ -19,7 +19,7 @@ export const ButtonWithAddedIcon: React.FC<IbuttonWithIcon> =
          iconSize,
          iconFill,
          iconStrokeWidth,
-         disabled= false}) =>
+         disabled= false}):JSX.Element =>
     {
 
         const buttonClass = ['ts--btn'];

@@ -4,7 +4,7 @@ interface ISearchResult {
     isVisible: boolean
 }
 
-export const SearchResultWrapper: React.FC<ISearchResult> = ({isVisible, children}) => {
+export const SearchResultWrapper: React.FC<ISearchResult> = ({isVisible, children}):JSX.Element => {
 
     const classes = ['ts--search__result-wrapper'];
 

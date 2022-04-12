@@ -8,7 +8,7 @@ export const TabsContent: React.FC<ITabsContent> = ({
                                                  index,
                                                  onChange,
                                                  children
-                                             }) => {
+                                             }):JSX.Element => {
 
     const tabsContentClasses = ['ts--tabs__content'];
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import {IGraphicView} from "./Models";
 
-export const GraphicView: React.FC<IGraphicView> = ({className, width = 24, height = 24, children}) => {
+export const GraphicView: React.FC<IGraphicView> = ({className, width = 24, height = 24, children}):JSX.Element => {
 
     const graphicViewClasses = ['ts--graphic-view'];
 

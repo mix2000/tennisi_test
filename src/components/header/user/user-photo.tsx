@@ -4,7 +4,7 @@ interface IProps {
     photoUrl: string
 }
 
-export const UserPhoto = () => {
+export const UserPhoto = ():JSX.Element => {
     return (
         <div className={'h-user__photo'}>
             {/*<img src="" alt=""/>*/}

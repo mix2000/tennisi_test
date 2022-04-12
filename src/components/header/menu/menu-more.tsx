@@ -4,7 +4,7 @@ import {NewIcon} from "../../icons";
 import {MenuMoreList} from "./menu-more-list";
 import {useOuterClick} from 'react-outer-click';
 
-export const MenuMore: React.FC = () => {
+export const MenuMore: React.FC = ():JSX.Element => {
     const ref = useRef(null);
 
     const [openedState, changeOpened] = useState(false);

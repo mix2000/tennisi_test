@@ -3,7 +3,7 @@ import {TagItem} from "../components/tags/Tags";
 import {TagsList} from "../components/tags/TagsList";
 import {tagsArray} from "../assets/mocks/tags";
 
-const TagsExample = () => {
+const TagsExample = ():JSX.Element => {
     return (
         <>
             <div className="row">
