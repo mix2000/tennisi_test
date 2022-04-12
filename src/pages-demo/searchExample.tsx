@@ -18,7 +18,6 @@ const SearchExample = ():JSX.Element => {
         }
     };
 
-
     const [newValue, changeValue] = useState(state.inputValue);
 
     const [newIsLoaded, changeIsLoaded] = useState(state.isLoaded);
