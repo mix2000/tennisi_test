@@ -1,10 +1,12 @@
 import React from 'react';
 import {IIcons} from "../Models";
 
-export const Favorite = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
+const Favorite = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
     return (
         <path fillRule="evenodd" clipRule="evenodd"
               d="M13.0393 4.63718L14.7592 8.07318C14.9278 8.4105 15.2531 8.6444 15.6305 8.69852L19.478 9.25234C20.4286 9.38959 20.8069 10.5417 20.1189 11.2018L17.3367 13.8752C17.0632 14.1381 16.9388 14.516 17.0034 14.8872L17.6601 18.6615C17.8218 19.5951 16.828 20.3075 15.9784 19.8658L12.5395 18.0825C12.2024 17.9076 11.7986 17.9076 11.4605 18.0825L8.02166 19.8658C7.17199 20.3075 6.17826 19.5951 6.34094 18.6615L6.99657 14.8872C7.06125 14.516 6.93679 14.1381 6.66337 13.8752L3.88112 11.2018C3.19315 10.5417 3.57143 9.38959 4.52204 9.25234L8.36956 8.69852C8.74687 8.6444 9.07321 8.4105 9.24177 8.07318L10.9607 4.63718C11.386 3.78761 12.614 3.78761 13.0393 4.63718Z"
               stroke={fill} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round"/>
     );
 };
+
+export default Favorite;

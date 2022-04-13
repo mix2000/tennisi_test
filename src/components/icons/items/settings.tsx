@@ -1,7 +1,7 @@
 import React from 'react';
 import {IIcons} from "../Models";
 
-export const Settings = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
+const Settings = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
     return (
         <>
             <path fillRule="evenodd" clipRule="evenodd"
@@ -12,3 +12,5 @@ export const Settings = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.E
         </>
     );
 };
+
+export default Settings;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {IIcons} from "../Models";
 
-export const AutoRacing = ({fill = '#2D2D35', strokeWidth = "0.2"}: IIcons): JSX.Element => {
+const AutoRacing = ({fill = '#2D2D35', strokeWidth = "0.2"}: IIcons): JSX.Element => {
     return (
         <>
             <path
@@ -19,3 +19,5 @@ export const AutoRacing = ({fill = '#2D2D35', strokeWidth = "0.2"}: IIcons): JSX
         </>
     );
 }
+
+export default AutoRacing;

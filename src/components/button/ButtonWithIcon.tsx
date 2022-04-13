@@ -1,26 +1,23 @@
 // кнопка с добавочной иконкой
 import React from "react";
-import {IbuttonWithIcon} from "./Models";
+import {IButtonWithIcon} from "./Models";
 import {NewIcon} from "../icons";
+import {EButtonColor, EButtonPosition} from "./Enums";
 
-export const ButtonWithAddedIcon: React.FC<IbuttonWithIcon> =
+export const ButtonWithAddedIcon: React.FC<IButtonWithIcon> =
     ({
          title,
          href,
          className,
-         lightColor,
-         darkColor,
-         iconRight,
-         iconLeft,
-         withoutText,
-         rounded,
-         brandColor,
+         btnColor,
+         iconPosition,
+         isRounded,
          iconType,
          iconSize,
          iconFill,
          iconStrokeWidth,
-         disabled= false}):JSX.Element =>
-    {
+         disabled = false
+     }): JSX.Element => {
 
         const buttonClass = ['ts--btn'];
 
@@ -32,43 +29,41 @@ export const ButtonWithAddedIcon: React.FC<IbuttonWithIcon> =
             buttonClass.push('disabled');
         }
 
-        if (lightColor) {
+        if (btnColor === EButtonColor.LIGHT_COLOR) {
             buttonClass.push('ts--btn_light')
-        } else if (darkColor) {
+        } else if (btnColor === EButtonColor.DARK_COLOR) {
             buttonClass.push('ts--btn_dark')
-        } else if (brandColor) {
+        } else if (btnColor === EButtonColor.BRAND_COLOR) {
             buttonClass.push('ts--btn_brand')
-        } else {
+        } else if (btnColor === EButtonColor.DARKEN_COLOR) {
             buttonClass.push('ts--btn_darken')
         }
 
+        if (isRounded) {
+            buttonClass.push('ts--btn_rounded');
+        }
+
         let buttonContent;
-        if (iconRight) {
+        if (iconPosition === EButtonPosition.RIGHT) {
             buttonClass.push('ts--btn_icon-right');
 
             buttonContent = <>
                 <span>{title}</span>
-                <NewIcon fill={iconFill} strokeWidth={iconStrokeWidth} height={iconSize} width={iconSize} type={iconType} />
+                <NewIcon fill={iconFill} strokeWidth={iconStrokeWidth} height={iconSize} width={iconSize}
+                         type={iconType}/>
             </>
-        }
-
-        if (iconLeft){
+        } else if (iconPosition === EButtonPosition.LEFT) {
             buttonClass.push('ts--btn_icon-left');
 
             buttonContent = <>
-                <NewIcon fill={iconFill} strokeWidth={iconStrokeWidth} height={iconSize} width={iconSize} type={iconType} />
+                <NewIcon fill={iconFill} strokeWidth={iconStrokeWidth} height={iconSize} width={iconSize}
+                         type={iconType}/>
                 <span>{title}</span>
             </>
-        }
-
-        if (withoutText) {
-            buttonContent = <>
-                <NewIcon fill={iconFill} strokeWidth={iconStrokeWidth} height={iconSize} width={iconSize} type={iconType} />
-            </>
-        }
-
-        if (rounded) {
-            buttonClass.push('ts--btn_rounded');
+        } else if (iconPosition === EButtonPosition.CENTER) {
+            buttonContent =
+                <NewIcon fill={iconFill} strokeWidth={iconStrokeWidth} height={iconSize} width={iconSize}
+                         type={iconType}/>
         }
 
         return (

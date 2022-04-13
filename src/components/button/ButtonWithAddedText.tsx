@@ -1,16 +1,15 @@
 // кнопка с добавочным текстом слева/справа
 import React from "react";
-import {IbuttonWithAddedText} from "./Models";
+import {IButtonWithAddedText} from "./Models";
+import {EButtonColor, EButtonTextPosition} from "./Enums";
 
-export const ButtonWithAddedText: React.FC<IbuttonWithAddedText> =
+export const ButtonWithAddedText: React.FC<IButtonWithAddedText> =
     ({
          title,
          href,
          className,
-         lightColor,
-         darkColor,
-         brandColor,
-         textRight = true,
+         btnColor,
+         textPosition,
          textValue,
          disabled = false
      }):JSX.Element => {
@@ -25,25 +24,25 @@ export const ButtonWithAddedText: React.FC<IbuttonWithAddedText> =
             buttonClass.push('disabled');
         }
 
-        if (lightColor) {
+        if (btnColor === EButtonColor.LIGHT_COLOR) {
             buttonClass.push('ts--btn_light')
-        } else if (darkColor) {
+        } else if (btnColor === EButtonColor.DARK_COLOR) {
             buttonClass.push('ts--btn_dark')
-        } else if (brandColor) {
+        } else if (btnColor === EButtonColor.BRAND_COLOR) {
             buttonClass.push('ts--btn_brand')
-        } else {
+        } else if (btnColor === EButtonColor.DARKEN_COLOR) {
             buttonClass.push('ts--btn_darken')
         }
 
         let buttonContent;
-        if (textRight) {
+        if (textPosition === EButtonTextPosition.RIGHT) {
             buttonClass.push('ts--btn_text-right')
 
             buttonContent = <>
                 <span>{title}</span>
                 <span>{textValue}</span>
             </>
-        } else {
+        } else if (textPosition === EButtonTextPosition.LEFT) {
             buttonClass.push('ts--btn_text-left')
 
             buttonContent = <>

@@ -1,7 +1,7 @@
 import React from 'react';
 import {IIcons} from "../Models";
 
-export const Top = ({fill = '#2D2D35', strokeWidth}: IIcons): JSX.Element => {
+const Top = ({fill = '#2D2D35'}: IIcons): JSX.Element => {
     return (
         <>
             <path
@@ -13,3 +13,5 @@ export const Top = ({fill = '#2D2D35', strokeWidth}: IIcons): JSX.Element => {
         </>
     );
 };
+
+export default Top;

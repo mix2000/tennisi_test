@@ -1,7 +1,7 @@
 import React from 'react';
 import {IIcons} from "../Models";
 
-export const Text = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
+const Text = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
     return (
         <>
             <path fillRule="evenodd" clipRule="evenodd"
@@ -12,3 +12,5 @@ export const Text = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Eleme
         </>
     );
 };
+
+export default Text;

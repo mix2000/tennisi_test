@@ -1,15 +1,14 @@
 import React from 'react';
-import {Ibutton} from "./Models";
+import {IButton} from "./Models";
+import {EButtonColor} from "./Enums";
 
 // стандартная кнопка
-export const Button: React.FC<Ibutton> =
+export const Button: React.FC<IButton> =
     ({
          title,
          className,
          href,
-         lightColor,
-         darkColor,
-         brandColor,
+         btnColor,
          disabled = false
      }):JSX.Element => {
 
@@ -23,13 +22,13 @@ export const Button: React.FC<Ibutton> =
             buttonClass.push('disabled');
         }
 
-        if (lightColor) {
+        if (btnColor === EButtonColor.LIGHT_COLOR) {
             buttonClass.push('ts--btn_light')
-        } else if (darkColor) {
+        } else if (btnColor === EButtonColor.DARK_COLOR) {
             buttonClass.push('ts--btn_dark')
-        } else if (brandColor) {
+        } else if (btnColor === EButtonColor.BRAND_COLOR) {
             buttonClass.push('ts--btn_brand')
-        } else {
+        } else if (btnColor === EButtonColor.DARKEN_COLOR) {
             buttonClass.push('ts--btn_darken')
         }
 

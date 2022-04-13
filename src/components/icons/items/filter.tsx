@@ -1,7 +1,7 @@
 import React from 'react';
 import {IIcons} from "../Models";
 
-export const Filter = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
+const Filter = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
     return (
         <>
             <path d="M10.5389 16.2815H5.02576" stroke={fill} strokeWidth={strokeWidth} strokeLinecap="round"
@@ -17,3 +17,5 @@ export const Filter = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Ele
         </>
     );
 };
+
+export default Filter;

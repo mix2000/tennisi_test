@@ -1,7 +1,7 @@
 import React from 'react';
 import {IIcons} from "../Models";
 
-export const Hide = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
+const Hide = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Element => {
     return (
         <>
             <path
@@ -20,3 +20,5 @@ export const Hide = ({fill = '#2D2D35', strokeWidth = '1.5'}: IIcons): JSX.Eleme
         </>
     );
 };
+
+export default Hide;
