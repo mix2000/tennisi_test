@@ -25,4 +25,4 @@ jobs:
     - name: Install
       run: npm install
     - name: Build
-      run: node scripts/build.js
+      run: npm run build
