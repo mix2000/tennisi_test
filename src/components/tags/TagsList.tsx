@@ -2,11 +2,11 @@ import React from "react";
 import {TagItem} from "./Tags";
 import {ITags} from "./Models";
 
-interface TagsList {
+interface ITagsList {
     tagsArr: ITags[],
 }
 
-export const TagsList: React.FC<TagsList> = ({tagsArr}):JSX.Element => {
+export const TagsList: React.FC<ITagsList> = ({tagsArr}):JSX.Element => {
 
     return (
         <>
