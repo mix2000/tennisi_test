@@ -1,0 +1,64 @@
+.ts--select {
+  --current-height: 48px;
+  position: relative;
+  max-width: 240px;
+  width: 100%;
+
+  &__current-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--clr-border);
+    height: var(--current-height);
+    padding: 0 20px;
+    background: var(--clr-general-white-100);
+    cursor: pointer;
+
+    &:hover {
+      background: var(--clr-hover);
+    }
+  }
+
+  &__current-value {
+    @include ty-paragraph-small-no-pad;
+  }
+
+  &__list-wrapper {
+    width: 100%;
+    position: absolute;
+    top: calc(var(--current-height) + 4px);
+    left: 0;
+    background: var(--clr-general-white-100);
+    box-shadow: var(--popup-box-shadow);
+    border-radius: var(--popup-border-radius);
+    padding: 12px 20px;
+  }
+
+  &__list {
+    overflow-y: auto;
+    max-height: 240px;
+    scrollbar-color: var(--scroll-color);
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      border-radius: var(--scroll-radius);
+      width: var(--scroll-width);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--scroll-color);
+      border-radius: var(--scroll-radius);
+      width: var(--scroll-width);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: var(--current-height);
+    &:first-of-type {
+      margin-top: -12px;
+    }
+  }
+}

@@ -20,4 +20,9 @@
   //отступы в подвале
   --footer-padding: var(--general-gutter);
   --footer-margin: var(--general-gutter);
+
+  //scrollbar
+  --scroll-color: rgba(159, 159, 176, .24);
+  --scroll-width: 4px;
+  --scroll-radius: 5px;
 }

@@ -8,6 +8,7 @@ import SwitchButtonExample from "./switchButtonExample";
 import ButtonExample from "./buttonExample";
 import TabsExample from "./tabsExample";
 import SearchExample from "./searchExample";
+import {Select} from "../components/select/select";
 
 export const ComponentsDemo = ():JSX.Element => {
     return (
@@ -31,6 +32,10 @@ export const ComponentsDemo = ():JSX.Element => {
                 </div>
 
                 <SearchExample/>
+
+                <div className="row">
+                    <Select/>
+                </div>
         </div>
     );
 };

@@ -1,9 +1,10 @@
 import React from 'react';
 import {NotificationsItem} from "./notifications-item";
 import {Button} from "../../button/Button";
+import {EButtonColor} from "../../button/Enums";
 
 interface IProps {
-    isActive?: boolean,
+    // isActive?: boolean,
 }
 
 export const Notifications:React.FC<IProps> = ():JSX.Element => {
@@ -15,7 +16,7 @@ export const Notifications:React.FC<IProps> = ():JSX.Element => {
                 <NotificationsItem date={'8 декабря, 23:50'} operation={'Пополнение баланса'} value={2000}/>
                 <NotificationsItem date={'7 декабря, 20:19'} operation={'Пополнение баланса'} value={2000}/>
             </div>
-            <Button className={'notifications__btn'} title={'Все уведомления'}/>
+            <Button btnColor={EButtonColor.DARK_COLOR} className={'notifications__btn'} title={'Все уведомления'}/>
         </div>
     );
 };
